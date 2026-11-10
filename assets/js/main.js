@@ -255,7 +255,7 @@
     const print = (html, cls = '') => { const p = d.createElement('div'); if (cls) p.className = cls; p.innerHTML = html; out.appendChild(p); out.scrollTop = out.scrollHeight; };
     const go = url => { closeModal(term); setTimeout(() => { location.href = url; }, 220); };
     const cmds = {
-      help: () => print('<span class="m">commands:</span> whoami · home · about · resume · portfolio · projects · blog · contact · pdf · theme [light|dark] · accent [orange|violet|teal|pink|blue] · socials · shahhub · clear · exit'),
+      help: () => print('<span class="m">commands:</span> whoami · home · about · resume · portfolio · projects · blog · contact · personality · mbti · ocean · pdf · theme [light|dark] · accent [orange|violet|teal|pink|blue] · socials · shahhub · clear · exit'),
       whoami: () => print('Shah Htet Naing — IT Network Analyst · Cybersecurity · Ph.D. researcher (Digital Forensics) · Singapore'),
       home: () => go('index.html'), about: () => go('about.html'), resume: () => go('resume.html'), experience: () => go('resume.html'),
       portfolio: () => go('portfolio.html'), certs: () => go('portfolio.html'), projects: () => go('projects.html'), work: () => go('projects.html'),
@@ -265,6 +265,9 @@
       socials: () => print('<a href="https://www.linkedin.com/in/shah-htet-naing" target="_blank" rel="noopener">linkedin</a> · <a href="https://www.youtube.com/@ShahsHaven" target="_blank" rel="noopener">youtube</a> · <a href="mailto:shahhtetnaing@gmail.com">email</a>'),
       theme: a => { const t = a === 'light' || a === 'dark' ? a : (root.dataset.theme === 'dark' ? 'light' : 'dark'); setTheme(t); print(`<span class="ok">✔</span> theme → ${t}`); },
       accent: a => { const ok = ['orange', 'violet', 'teal', 'pink', 'blue']; if (!ok.includes(a)) return print('usage: accent ' + ok.join('|')); setAccent(a); print(`<span class="ok">✔</span> accent → ${a}`); },
+      mbti: () => print('<span class="m">INTJ-A · Architect</span> — imaginative and strategic thinker with a plan for everything.<br>57% Introverted · 60% Intuitive · 63% Thinking · 82% Judging · 53% Assertive'),
+      ocean: () => print('<span class="m">Big Five (percentile)</span><br>' + [['O','Openness',56,'explorer-leaning'],['C','Conscientiousness',86,'focused'],['E','Extraversion',56,'ambivert'],['A','Agreeableness',51,'balanced'],['N','Neuroticism',27,'resilient']].map(([k,n,v,t]) => `${k} ${'█'.repeat(Math.round(v/10))}${'░'.repeat(10-Math.round(v/10))} ${v} ${n} <span class="c">· ${t}</span>`).join('<br>')),
+      personality: () => { cmds.mbti(); cmds.ocean(); print('<span class="c">→ see more:</span> <a href="about.html#persona">about.html#persona</a>'); },
       sudo: () => print('nice try. this incident will be reported. 🙂'),
       clear: () => (out.innerHTML = ''), exit: () => closeModal(term),
     };

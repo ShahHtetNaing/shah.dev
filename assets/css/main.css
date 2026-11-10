@@ -899,3 +899,56 @@ a.footer-sign:hover i { transform: translateX(18px) rotate(-45deg); }
 @media (max-width: 760px) { .otc { grid-template-columns: 1fr; } .otc__links dl { grid-template-columns: 1fr 1fr; } .otc__links dt, .otc__links dd { grid-row: auto; } }
 @media (max-width: 420px) { .genres { grid-template-columns: 1fr; } }
 .passion__e { font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", sans-serif; }
+
+/* ---------- personality ---------- */
+.persona { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; }
+.persona .window__body { padding: 24px; }
+.mbti__head { display: flex; gap: 20px; align-items: center; margin-bottom: 22px; }
+.mbti__badge { flex: none; width: 116px; height: 116px; display: grid; place-items: center; align-content: center; border-radius: 22px; background: var(--accent); color: var(--accent-ink); transform: rotate(-4deg); box-shadow: 5px 5px 0 var(--ink); transition: transform .5s var(--ease); }
+.persona__mbti:hover .mbti__badge { transform: rotate(3deg) scale(1.04); }
+.mbti__badge span { font-family: var(--f-display); font-size: 44px; line-height: .9; }
+.mbti__badge i { font-style: normal; font-family: var(--f-mono); font-size: 13px; letter-spacing: .2em; }
+.mbti__head h3 { font-family: var(--f-display); font-weight: 400; font-size: 40px; line-height: 1; margin: 2px 0 6px; text-transform: uppercase; }
+.mbti__head .eyebrow { margin: 0; }
+.mbti__desc { margin: 0; font-size: 14px; color: var(--ink-2); line-height: 1.6; }
+.tbars { display: grid; gap: 16px; }
+.tbar__top { display: grid; grid-template-columns: 1fr auto 1fr; align-items: end; gap: 10px; margin-bottom: 7px; font-size: 13px; color: var(--muted); }
+.tbar__top span:last-child { text-align: right; }
+.tbar__top .is-win { color: var(--ink); font-weight: 600; }
+.tbar__top b { font-family: var(--f-mono); font-size: 12px; font-weight: 500; color: var(--accent); letter-spacing: .04em; }
+.tbar__track { position: relative; height: 10px; border-radius: 99px; background: var(--accent-soft); border: 1px solid var(--line-dash); }
+.tbar__fill { position: absolute; top: 0; bottom: 0; border-radius: 99px; background: var(--accent); transform: scaleX(0); transform-origin: var(--o, left); transition: transform 1.2s var(--ease); }
+.tbar__dot { position: absolute; top: 50%; width: 18px; height: 18px; margin: -9px 0 0 -9px; border-radius: 50%; background: var(--surface); border: 3px solid var(--accent); transform: scale(0); transition: transform .5s .9s var(--ease); }
+.is-in .tbar__fill { transform: scaleX(1); }
+.is-in .tbar__dot { transform: scale(1); }
+.tbar:nth-child(2) .tbar__fill, .tbar:nth-child(2) .tbar__dot { transition-delay: .12s, 1s; }
+.ocean__top { display: grid; grid-template-columns: 210px 1fr; gap: 18px; align-items: center; margin-bottom: 14px; }
+.radar { width: 100%; height: auto; overflow: visible; }
+.radar__ring { fill: none; stroke: var(--line-dash); stroke-width: 1; }
+.radar__axis { stroke: var(--line-dash); stroke-dasharray: 2 3; }
+.radar__shape { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 2; stroke-linejoin: round; transform-origin: 110px 110px; transform: scale(0); transition: transform 1.2s var(--ease); }
+.is-in .radar__shape { transform: scale(1); }
+.radar__dot { fill: var(--accent); }
+.radar__lbl { font-family: var(--f-mono); font-size: 10px; fill: var(--ink-2); text-anchor: middle; letter-spacing: .04em; }
+.ocean__intro { margin: 0; font-size: 14px; color: var(--ink-2); line-height: 1.6; }
+.ocean__intro .eyebrow { display: block; margin-bottom: 6px; }
+.ocean__intro b { color: var(--ink); }
+.ocean__row { border-top: 1px dashed var(--line-dash); }
+.ocean__row summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: 36px 1fr auto; grid-template-areas: "k n v" "k b b"; gap: 4px 12px; align-items: center; padding: 12px 0; }
+.ocean__row summary::-webkit-details-marker { display: none; }
+.ocean__k { grid-area: k; width: 36px; height: 36px; display: grid; place-items: center; border-radius: 10px; border: 1.5px solid var(--line); font-family: var(--f-display); font-size: 22px; transition: background .3s, color .3s; }
+.ocean__row[open] .ocean__k, .ocean__row summary:hover .ocean__k { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.ocean__n { grid-area: n; font-size: 14.5px; font-weight: 600; color: var(--ink); }
+.ocean__n em { font-style: normal; font-family: var(--f-mono); font-size: 10.5px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-left: 8px; }
+.ocean__v { grid-area: v; font-family: var(--f-display); font-size: 26px; line-height: 1; }
+.ocean__v small { font-family: var(--f-mono); font-size: 10px; color: var(--muted); margin-left: 2px; }
+.ocean__bar { grid-area: b; height: 6px; border-radius: 99px; background: var(--accent-soft); overflow: hidden; }
+.ocean__bar i { display: block; height: 100%; border-radius: inherit; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform 1.2s var(--ease); }
+.is-in .ocean__bar i { transform: scaleX(1); }
+.ocean__more { padding: 0 0 14px 48px; animation: fadeUp .4s var(--ease); }
+.ocean__more p { margin: 0 0 6px; font-size: 13.5px; color: var(--ink-2); line-height: 1.6; }
+.ocean__more .mono { font-family: var(--f-mono); font-size: 11.5px; color: var(--muted); }
+.ocean__room b { color: var(--accent); }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+@media (max-width: 1080px) { .persona { grid-template-columns: 1fr; } }
+@media (max-width: 640px) { .mbti__head { flex-direction: column; align-items: flex-start; } .ocean__top { grid-template-columns: 1fr; } .radar { max-width: 240px; margin: 0 auto; } .ocean__more { padding-left: 0; } }

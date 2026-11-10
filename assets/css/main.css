@@ -848,3 +848,25 @@ a.footer-sign:hover i { transform: translateX(18px) rotate(-45deg); }
 .prose a.btn--accent:hover { color: var(--accent-ink); }
 .prose a.btn--ghost { color: var(--ink); }
 .prose a.btn i { font-size: 16px; }
+
+/* ---------- about: facts + publications ---------- */
+.sub-head--tight { margin: 34px 0 14px; }
+.strength h4 { font-size: 25px; line-height: 1.05; align-items: flex-start; }
+.strength h4 i { margin-top: 1px; }
+.about-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 34px; }
+.fact-card { border: 1.5px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 22px 24px; }
+.fact-card .eyebrow { margin-bottom: 10px; }
+.fact-list { list-style: none; margin: 0; padding: 0; }
+.fact-list li { padding: 12px 0; border-top: 1px dashed var(--line-dash); }
+.fact-list li:first-child { border-top: 0; padding-top: 4px; }
+.fact-list span { display: block; font-family: var(--f-mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
+.fact-list p { margin: 0; font-size: 14.5px; color: var(--ink-2); line-height: 1.6; }
+.fact-list b { color: var(--accent); font-weight: 400; margin: 0 4px; }
+.pubs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.pub { display: flex; flex-direction: column; gap: 6px; padding: 18px; border: 1.5px solid var(--line); border-radius: var(--radius); background: var(--surface); color: var(--ink); text-decoration: none; transition: transform .35s var(--ease), background .3s, box-shadow .35s; }
+.pub:hover { transform: translateY(-4px); background: var(--accent-soft); box-shadow: 4px 4px 0 var(--accent); }
+.pub__k { font-family: var(--f-mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+.pub strong { font-family: var(--f-display); font-weight: 400; font-size: 24px; line-height: 1; text-transform: uppercase; }
+.pub__s { font-size: 12.5px; color: var(--ink-2); }
+@media (max-width: 1080px) { .pubs { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .about-facts, .pubs { grid-template-columns: 1fr; } }

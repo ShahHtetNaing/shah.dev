@@ -317,8 +317,9 @@ document.querySelectorAll('[data-share]').forEach(a => { a.href = 'https://www.l
   };
   new IntersectionObserver(es => { const was = visible; visible = es[0].isIntersecting; if (visible && !was) { last = performance.now(); requestAnimationFrame(frame); } }).observe(ly);
   requestAnimationFrame(frame);
-  let pt = 0;
-  card.addEventListener('pointerdown', e => { drag = true; ly.classList.add('is-drag'); card.setPointerCapture(e.pointerId); pt = performance.now(); e.preventDefault(); });
+  let pt = 0, sx = 0, sy = 0, t0 = 0;
+  const flip = () => { const f = card.classList.toggle('is-flipped'); card.setAttribute('aria-pressed', f); v += f ? -1.4 : 1.4; };
+  card.addEventListener('pointerdown', e => { if (e.target.closest('a,button')) return; sx = e.clientX; sy = e.clientY; t0 = performance.now(); drag = true; ly.classList.add('is-drag'); card.setPointerCapture(e.pointerId); pt = performance.now(); e.preventDefault(); });
   card.addEventListener('pointermove', e => {
     if (!drag) return;
     const p = pivot(), now = performance.now();
@@ -326,10 +327,9 @@ document.querySelectorAll('[data-share]').forEach(a => { a.href = 'https://www.l
     const dt = Math.max(0.008, (now - pt) / 1000); pt = now;
     v = (na - a) / dt * 0.6; a = na;
   });
-  const end = () => { if (!drag) return; drag = false; ly.classList.remove('is-drag'); v = Math.max(-9, Math.min(9, v)); };
+  const end = e => { if (!drag) return; drag = false; if (e && Math.hypot(e.clientX - sx, e.clientY - sy) < 6 && performance.now() - t0 < 400) flip(); ly.classList.remove('is-drag'); v = Math.max(-9, Math.min(9, v)); };
   card.addEventListener('pointerup', end); card.addEventListener('pointercancel', end);
   ly.addEventListener('pointermove', e => { if (!drag && e.pointerType === 'mouse') v -= e.movementX * 0.0025; });
   addEventListener('scroll', () => { if (!still) v += (scrollY - lastY) * 0.0009; lastY = scrollY; }, { passive: true });
-  card.addEventListener('keydown', e => { if (e.key === 'ArrowLeft') v += 2.5; if (e.key === 'ArrowRight') v -= 2.5; });
-  card.tabIndex = 0; card.setAttribute('aria-label', 'ID card — use arrow keys to swing');
+  card.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target === card) { e.preventDefault(); flip(); } if (e.key === 'ArrowLeft') v += 2.5; if (e.key === 'ArrowRight') v -= 2.5; });
 })();

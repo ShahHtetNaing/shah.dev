@@ -40,22 +40,38 @@
   <div class="lanyard__swing">
     <div class="lanyard__strap"><span>SHAH.OS · SHAH.OS · SHAH.OS · SHAH.OS</span></div>
     <div class="lanyard__clip"><i></i></div>
-    <div class="lanyard__card">
-      <div class="lanyard__hole"></div>
-      <div class="lanyard__head"><span>SHAH.OS</span><span>ID · 0820</span></div>
-      <img src="img/mypic-half.webp" alt="Shah Htet Naing" draggable="false">
-      <div class="lanyard__info"><strong>Shah Htet Naing</strong><span>IT Network Analyst · Cybersecurity</span></div>
-      <div class="lanyard__foot"><span class="barcode"></span><span>SG · VISITOR PASS</span></div>
+    <div class="lanyard__card" tabindex="0" aria-pressed="false" aria-label="ID card. Press Enter to flip, arrow keys to swing">
+      <div class="lanyard__flip">
+        <div class="lanyard__face lanyard__face--front">
+          <div class="lanyard__hole"></div>
+          <div class="lanyard__head"><span>SHAH.OS</span><span>ID · 0820</span></div>
+          <img src="img/mypic-half.webp" alt="Shah Htet Naing" draggable="false">
+          <div class="lanyard__info"><strong>Shah Htet Naing</strong><span>IT Network Analyst · Cybersecurity</span></div>
+          <div class="lanyard__foot"><span class="barcode"></span><span class="lanyard__turn">⟲ tap to flip</span></div>
+        </div>
+        <div class="lanyard__face lanyard__face--back">
+          <div class="lanyard__hole"></div>
+          <div class="lanyard__head"><span>Access details</span><span>⟲ flip</span></div>
+          <ul class="idback">
+            <li><span>Status</span><b><span class="live"></span>Open to roles</b></li>
+            <li><span>Age</span><b data-age="1999-08-20">—</b></li>
+            <li><span>Local time</span><b><em data-clock>—</em>&nbsp;SGT</b></li>
+            <li><span>Base</span><b>Singapore</b></li>
+            <li><span>Focus</span><b>Network · Security · Cloud</b></li>
+          </ul>
+          <div class="idback__langs"><span>Languages</span><div><i>English</i><i>Burmese</i><i>+4 more</i></div></div>
+          <button type="button" class="idback__email" data-copy="shahhtetnaing@gmail.com"><span>shahhtetnaing@gmail.com</span><i class="ion-ios-copy-outline"></i></button>
+          <div class="idback__social">
+            <a href="https://www.linkedin.com/in/shah-htet-naing" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ion-social-linkedin"></i></a>
+            <a href="https://www.youtube.com/@ShahsHaven" target="_blank" rel="noopener" aria-label="YouTube"><i class="ion-social-youtube"></i></a>
+            <a href="contact.html" aria-label="Contact"><i class="ion-paper-airplane"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <p class="lanyard__hint mono">← drag the card →</p>
-</div><div class="window about-id"><ul class="info-list">
-          <li><span>Name</span><span>Shah Htet Naing</span></li>
-          <li><span>Age</span><span data-age="1999-08-20">—</span></li>
-          <li><span>Base</span><span>Singapore</span></li>
-          <li><span>Email</span><a href="mailto:shahhtetnaing@gmail.com">shahhtetnaing@gmail.com</a></li>
-          <li><span>Languages</span><span>EN · MY · +4</span></li>
-        </ul></div></aside>
+  <p class="lanyard__hint mono">drag to swing · tap to flip</p>
+</div></aside>
       <div class="about-copy" data-reveal><div class="section-head"><p class="eyebrow">01 — About</p><h2 class="h-display">The person<br>behind the packets</h2></div>
         <p class="lead">I’m an <span class="serif">IT Network Analyst</span> and cybersecurity practitioner who enjoys turning messy infrastructure into calm, secure, well-documented systems.</p>
         <p class="body">From configuring FortiGate firewalls and server rooms under HIPAA in the United States, to teaching ICT in Myanmar and leading peer support at James Cook University Singapore, my work sits where technology meets people. I hold an M.S. in Cybersecurity (GPA 3.89) from Webster University, and I’m currently pursuing a Ph.D. in Information Technology (Digital Forensics) alongside a Master of IT in Artificial Intelligence.</p>
@@ -117,7 +133,7 @@
   <div class="wrap">
     <div class="rule-double"></div>
     <div class="footer-top">
-      <div class="footer-sign"><span>Shah</span> Htet Naing</div>
+      <a class="footer-sign" href="contact.html">Let’s <span>connect</span> <i class="ion-arrow-right-c"></i></a>
       <div class="socials">
         <a class="icon-btn" href="https://www.linkedin.com/in/shah-htet-naing" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ion-social-linkedin"></i></a>
         <a class="icon-btn" href="https://www.youtube.com/@ShahsHaven" target="_blank" rel="noopener" aria-label="YouTube"><i class="ion-social-youtube"></i></a>

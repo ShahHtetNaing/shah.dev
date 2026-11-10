@@ -271,7 +271,7 @@
     const go = url => { closeModal(term); setTimeout(() => { location.href = url; }, 220); };
     const cmds = {
       help: () => print('<span class="m">commands:</span> whoami · home · about · resume · portfolio · projects · blog · contact · personality · mbti · ocean · pdf · theme [light|dark] · accent [orange|violet|teal|pink|blue] · socials · shahhub · clear · exit'),
-      whoami: () => print('Shah Htet Naing — IT Network Analyst · Cybersecurity · Ph.D. researcher (Digital Forensics) · Singapore'),
+      whoami: () => print('Shah Htet Naing — IT Network Analyst · Cybersecurity · Ph.D. researcher (Information Security) · Singapore'),
       home: () => go('index.html'), about: () => go('about.html'), resume: () => go('resume.html'), experience: () => go('resume.html'),
       portfolio: () => go('portfolio.html'), certs: () => go('portfolio.html'), projects: () => go('projects.html'), work: () => go('projects.html'),
       blog: () => go('blog.html'), contact: () => go('contact.html'),

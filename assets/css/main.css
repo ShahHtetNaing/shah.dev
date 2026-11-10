@@ -870,3 +870,32 @@ a.footer-sign:hover i { transform: translateX(18px) rotate(-45deg); }
 .pub__s { font-size: 12.5px; color: var(--ink-2); }
 @media (max-width: 1080px) { .pubs { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 640px) { .about-facts, .pubs { grid-template-columns: 1fr; } }
+
+/* ---------- off the clock ---------- */
+.life { grid-template-columns: 1.75fr 1fr; align-items: stretch; }
+.life-card--otc { padding: 26px; }
+.otc__head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
+.otc__head h3 { margin: 0; }
+.otc__head b { color: var(--accent); font-weight: 500; }
+.otc { display: grid; grid-template-columns: 1.1fr 1fr; gap: 22px; }
+.otc .eyebrow { display: flex; align-items: center; gap: 8px; margin: 0 0 12px; }
+.otc .eyebrow i { font-size: 16px; }
+.genres { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.genre { border: 1px dashed var(--line-dash); border-radius: 12px; padding: 12px; background: var(--bg); transition: transform .35s var(--ease), border-color .3s, box-shadow .35s; }
+.genre:hover { transform: translateY(-3px) rotate(-.6deg); border: 1px solid var(--accent); box-shadow: 3px 3px 0 var(--accent); }
+.genre__k { display: flex; align-items: center; gap: 6px; font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink); margin-bottom: 8px; }
+.genre__k i { color: var(--accent); font-size: 15px; }
+.genre__chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.genre__chips i { font-style: normal; font-size: 12.5px; padding: 3px 9px; border-radius: 99px; background: var(--accent-soft); color: var(--ink); }
+.life-card ul.passions li { align-items: flex-start; gap: 12px; padding: 10px 0; transition: transform .3s var(--ease); }
+.life-card ul.passions li:hover { transform: translateX(4px); }
+.passion__e { flex: none; width: 34px; height: 34px; display: grid; place-items: center; border-radius: 10px; background: var(--accent-soft); font-size: 17px; }
+.passions b { display: block; font-family: var(--f-mono); font-size: 10.5px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-bottom: 2px; }
+.otc__links { margin-top: 20px; padding-top: 14px; border-top: 1.5px solid var(--line); }
+.otc__links dl { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px 16px; }
+.otc__links dt { grid-row: 1; margin-top: 0; }
+.otc__links dd { grid-row: 2; font-size: 13.5px; }
+@media (max-width: 1080px) { .life { grid-template-columns: 1fr; } .life .travel { min-height: 300px; } }
+@media (max-width: 760px) { .otc { grid-template-columns: 1fr; } .otc__links dl { grid-template-columns: 1fr 1fr; } .otc__links dt, .otc__links dd { grid-row: auto; } }
+@media (max-width: 420px) { .genres { grid-template-columns: 1fr; } }
+.passion__e { font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", sans-serif; }

@@ -248,6 +248,21 @@
     io.observe(ff);
   }
 
+  /* ---------- memory lane ---------- */
+  const lane = $('.lane');
+  if (lane) {
+    const items = $$('.lane__item', lane);
+    let raf = 0;
+    const tick = () => {
+      raf = 0;
+      const r = lane.getBoundingClientRect(), mid = innerHeight * .55;
+      lane.style.setProperty('--p', Math.min(1, Math.max(0, (mid - r.top) / r.height)).toFixed(4));
+      items.forEach(it => { const n = it.querySelector('.lane__node').getBoundingClientRect(); it.classList.toggle('is-active', n.top < mid); });
+    };
+    const req = () => { if (!raf) raf = requestAnimationFrame(tick); };
+    addEventListener('scroll', req, { passive: true }); addEventListener('resize', req); tick();
+  }
+
   /* ---------- terminal ---------- */
   const term = $('#terminal');
   if (term) {

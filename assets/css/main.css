@@ -419,8 +419,8 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 
 /* ---------- Leadership / volunteering log ---------- */
 .lead-log .window__body { padding: 26px 18px 10px; }
-.nodes { display: grid; grid-template-columns: repeat(7, 1fr); position: relative; }
-.nodes::before { content: ""; position: absolute; top: 9px; left: 8%; right: 8%; border-top: 1.5px solid var(--line); }
+.nodes { display: grid; grid-template-columns: repeat(8, 1fr); position: relative; }
+.nodes::before { content: ""; position: absolute; top: 9px; left: 6%; right: 6%; border-top: 1.5px solid var(--line); }
 .node { position: relative; text-align: center; padding: 0 6px 14px; border-radius: 10px; transition: background .25s; }
 .node__dot { width: 18px; height: 18px; margin: 0 auto 12px; border-radius: 50%; border: 2px solid var(--line); background: var(--surface); position: relative; transition: all .25s; }
 .node.is-active .node__dot, .node:hover .node__dot { background: var(--accent); border-color: var(--accent); box-shadow: 0 0 0 5px var(--accent-soft); }

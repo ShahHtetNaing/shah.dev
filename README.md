@@ -14,7 +14,13 @@ The design combines the original diamond portfolio with a terminal / editorial "
 
 ## Structure
 ```
-index.html            home page
+index.html            home: half-body hero + side menu
+about.html            about + hanging ID card (drag to swing)
+resume.html           experience, education, skills
+portfolio.html        certificates & awards
+projects.html         projects & SHAHHUB
+blog.html             articles
+contact.html          contact
 work*.html            project case studies
 post*.html            blog articles
 assets/css/main.css   design system (themes, components, layout)

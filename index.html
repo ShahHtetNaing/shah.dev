@@ -41,9 +41,9 @@
 <div class="progress" aria-hidden="true"></div>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="Shah Htet Naing — home"><span class="brand__mark" aria-hidden="true"></span><span>SHAH<b>.OS</b></span></a>
+    <a class="brand" href="index.html" aria-label="Shah Htet Naing — home"><span class="brand__mark" aria-hidden="true"></span><span>SHAH<b>.OS</b></span></a>
     <span class="ticker" aria-hidden="true">Singapore · <span data-clock>--:--</span> SGT</span>
-    <nav class="nav" id="nav" aria-label="Primary"><a class="nav__link" href="#about">About</a><a class="nav__link" href="#experience">Experience</a><a class="nav__link" href="#work">Work</a><a class="nav__link" href="#certificates">Certs</a><a class="nav__link" href="#blog">Blog</a><a class="nav__link" href="#contact">Contact</a></nav>
+    <nav class="nav" id="nav" aria-label="Primary"><a class="nav__link" href="about.html">About</a><a class="nav__link" href="resume.html">Resume</a><a class="nav__link" href="portfolio.html">Portfolio</a><a class="nav__link" href="projects.html">Projects</a><a class="nav__link" href="blog.html">Blog</a><a class="nav__link" href="contact.html">Contact</a></nav>
     <div class="header-actions">
       <a class="btn btn--accent btn--sm" href="https://drive.google.com/file/d/18omIwLDvxpnTU5aqZb1KztMZjyitaEJ_/view?usp=sharing" target="_blank" rel="noopener">Resume <i class="ion-arrow-down-c"></i></a>
       <button class="icon-btn theme-toggle" type="button" aria-label="Toggle light / dark theme"><svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg><svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
@@ -51,18 +51,17 @@
     </div>
   </div>
 </header>
-
-<main id="main">
-<section class="hero" id="home">
-  <div class="wrap">
-    <div>
+<main id="main" class="page page--home">
+<section class="home" id="home">
+  <div class="wrap home__grid">
+    <div class="home__intro">
       <p class="hero__hello"><b>●</b> Available for security &amp; infrastructure roles</p>
       <h1 class="hero__name"><span class="line"><span>Shah</span></span><span class="line"><span>Htet</span></span><span class="line"><span class="outline">Naing</span></span></h1>
       <p class="hero__role">&gt; <span class="typed" data-typed="IT Network Analyst|Cybersecurity Practitioner|Ph.D. Researcher · Digital Forensics|Content Creator · Shah's Haven|Builder of SHAHHUB">IT Network Analyst</span><span class="caret"></span></p>
       <p class="hero__lead lead">I design, harden and automate networks — and translate security into language people actually use.</p>
       <div class="hero__cta">
-        <a class="btn btn--accent" href="#work">View my work <i class="ion-arrow-right-c"></i></a>
-        <a class="btn btn--ghost" href="#contact">Let’s talk</a>
+        <a class="btn btn--accent" href="projects.html">View my work <i class="ion-arrow-right-c"></i></a>
+        <a class="btn btn--ghost" href="contact.html">Let’s talk</a>
       </div>
       <div class="hero__stats">
         <div><strong data-count="10">0</strong><span>Years in IT</span></div>
@@ -70,366 +69,29 @@
         <div><strong data-count="23">0</strong><span>Countries</span></div>
         <div><strong data-count="6">0</strong><span>Languages</span></div>
       </div>
-      <a class="scroll-cue" href="#about"><i></i> Scroll to explore</a>
     </div>
-    <div class="diamond-stage" aria-hidden="true">
-      <svg class="ring" viewBox="0 0 200 200"><defs><path id="ringPath" d="M100,100 m-88,0 a88,88 0 1,1 176,0 a88,88 0 1,1 -176,0"/></defs><text><textPath href="#ringPath">network · security · cloud · ai · research · <tspan class="acc">shah.os</tspan> · network · security · cloud · ai ·</textPath></text></svg>
-      <div class="diamond-frame"></div><div class="diamond-frame diamond-frame--2"></div><div class="diamond-frame diamond-frame--3"></div>
-      <div class="diamond"><img src="img/man2.webp" alt="" fetchpriority="high"></div>
+    <div class="home__photo" aria-hidden="true">
+      <span class="home__diamond"></span><span class="home__diamond home__diamond--2"></span>
+      <div class="home__frame"><img src="img/mypic-half.webp" alt="" fetchpriority="high"></div>
       <div class="diamond-tag diamond-tag--1"><span class="live"></span>Ph.D. <b>in progress</b></div>
       <div class="diamond-tag diamond-tag--2">Based in <b>Singapore</b></div>
     </div>
+    <nav class="home__nav" aria-label="Pages">
+      <a href="about.html"><span class="n">01</span><span class="t">About Me</span><span class="arr">←</span><small>Story, values &amp; life</small></a>
+      <a href="resume.html"><span class="n">02</span><span class="t">Resume</span><span class="arr">←</span><small>Experience &amp; education</small></a>
+      <a href="portfolio.html"><span class="n">03</span><span class="t">Portfolio</span><span class="arr">←</span><small>29 certificates &amp; awards</small></a>
+      <a href="projects.html"><span class="n">04</span><span class="t">Project</span><span class="arr">←</span><small>Builds, fixes &amp; SHAHHUB</small></a>
+      <a href="blog.html"><span class="n">05</span><span class="t">My Blog</span><span class="arr">←</span><small>Security writing</small></a>
+      <a href="contact.html"><span class="n">06</span><span class="t">Contact</span><span class="arr">←</span><small>Let’s build something</small></a>
+    </nav>
   </div>
 </section>
-
 <div class="stack" aria-label="Tools I work with">
   <span class="stack__label">Toolkit</span>
   <div class="stack__track"><span>Wireshark</span><span>Nmap</span><span>Splunk</span><span>Kali Linux</span><span>Burp Suite</span><span>Metasploit</span><span>Nessus</span><span>Fortinet</span><span>Cisco</span><span>Active Directory</span><span>Microsoft Entra ID</span><span>Intune</span><span>Microsoft 365</span><span>AWS</span><span>PowerShell</span><span>Power Automate</span><span>Python</span><span>VMware</span><span>Autopsy</span><span>OpenSSL</span><span>Wireshark</span><span>Nmap</span><span>Splunk</span><span>Kali Linux</span><span>Burp Suite</span><span>Metasploit</span><span>Nessus</span><span>Fortinet</span><span>Cisco</span><span>Active Directory</span><span>Microsoft Entra ID</span><span>Intune</span><span>Microsoft 365</span><span>AWS</span><span>PowerShell</span><span>Power Automate</span><span>Python</span><span>VMware</span><span>Autopsy</span><span>OpenSSL</span></div>
 </div>
 
-<section class="section" id="about">
-  <div class="wrap">
-    <div class="section-head" data-reveal><p class="eyebrow">01 — About</p><h2 class="h-display">The person<br>behind the packets</h2></div>
-    <div class="about-grid">
-      <aside class="window portrait" data-reveal>
-        <div class="window__bar"><span class="window__dots"><i></i><i></i><i></i></span><span class="window__title">profile.jpg</span><span class="window__meta">3:4</span></div>
-        <div class="window__body"><span class="corner corner--tl"></span><span class="corner corner--br"></span><img src="img/man1.webp" alt="Shah Htet Naing" loading="lazy"></div>
-        <ul class="info-list">
-          <li><span>Name</span><span>Shah Htet Naing</span></li>
-          <li><span>Age</span><span data-age="1999-08-20">—</span></li>
-          <li><span>Base</span><span>Singapore</span></li>
-          <li><span>Email</span><a href="mailto:shahhtetnaing@gmail.com">shahhtetnaing@gmail.com</a></li>
-          <li><span>Languages</span><span>EN · MY · +4</span></li>
-        </ul>
-      </aside>
-      <div class="about-copy" data-reveal>
-        <p class="lead">I’m an <span class="serif">IT Network Analyst</span> and cybersecurity practitioner who enjoys turning messy infrastructure into calm, secure, well-documented systems.</p>
-        <p class="body">From configuring FortiGate firewalls and server rooms under HIPAA in the United States, to teaching ICT in Myanmar and leading peer support at James Cook University Singapore, my work sits where technology meets people. I hold an M.S. in Cybersecurity (GPA 3.89) from Webster University, and I’m currently pursuing a Ph.D. in Information Technology (Digital Forensics) alongside a Master of IT in Artificial Intelligence.</p>
-        <p class="body">Outside of work I publish research, write books, build tools for the community through <a href="https://shahhubtools.base44.app/" target="_blank" rel="noopener">SHAHHUB</a>, and share what I learn on <a href="https://www.youtube.com/@ShahsHaven" target="_blank" rel="noopener">Shah’s Haven</a>.</p>
-        <div class="about-cta">
-          <a class="btn btn--accent" href="https://drive.google.com/file/d/18omIwLDvxpnTU5aqZb1KztMZjyitaEJ_/view?usp=sharing" target="_blank" rel="noopener">Download resume <i class="ion-arrow-down-c"></i></a>
-          <a class="btn btn--ghost" href="https://www.linkedin.com/in/shah-htet-naing" target="_blank" rel="noopener"><i class="ion-social-linkedin"></i> LinkedIn</a>
-        </div>
-        <div class="strengths">
-          <div class="strength"><span class="strength__n">01</span><h4><i class="ion-network"></i> Networks</h4><p>Firewalls, switching, Wi-Fi, server rooms and baselines that scale.</p></div>
-          <div class="strength"><span class="strength__n">02</span><h4><i class="ion-locked"></i> Security</h4><p>Hardening, threat detection, HIPAA compliance and incident response.</p></div>
-          <div class="strength"><span class="strength__n">03</span><h4><i class="ion-cloud"></i> Cloud &amp; Identity</h4><p>Microsoft 365, Entra ID, Intune and AWS governance.</p></div>
-          <div class="strength"><span class="strength__n">04</span><h4><i class="ion-code"></i> Automation</h4><p>PowerShell and Power Automate to remove repetitive toil.</p></div>
-          <div class="strength"><span class="strength__n">05</span><h4><i class="ion-erlenmeyer-flask"></i> Research</h4><p>Digital forensics, AI security and published academic work.</p></div>
-          <div class="strength"><span class="strength__n">06</span><h4><i class="ion-videocamera"></i> Teaching</h4><p>Making security approachable — in class, on YouTube and in books.</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="experience">
-  <div class="wrap">
-    <div class="section-head" data-reveal><p class="eyebrow">02 — Experience</p><h2 class="h-display">git log<br>--career</h2></div>
-    <div class="gitline" aria-hidden="true"><span>2015 · init</span><span class="gitline__track"><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="latest">HEAD → now</span></div>
-    <ol class="gitlog">
-<li class="commit is-open" data-reveal>
-  <button class="commit__head" type="button" aria-expanded="true">
-    <span class="commit__hash">9f3a1c0</span><span class="commit__logo">JCU</span>
-    <span><span class="commit__title">Vice President of Peer Support</span><span class="commit__tag">Contract</span><span class="commit__org">Student Council Executive Committee · James Cook University (Singapore)</span></span>
-    <span class="commit__date">Sep 2026 — Current</span><span class="commit__chev" aria-hidden="true">+</span>
-  </button>
-  <div class="commit__body"><div><div class="commit__inner">
-    <div class="meta">Singapore · On-site<br>Sep 2026 — Current</div>
-    <div><p>Appointed to lead the peer support strategy, student wellbeing initiatives, and community engagement for the Student Council Executive Committee at James Cook University Singapore.</p><ul><li><strong>Strategy &amp; Development.</strong> Formulate and implement comprehensive peer support strategies aligned with university goals to enhance student wellbeing and campus experience.</li><li><strong>Program &amp; Event Management.</strong> Oversee and coordinate student activities, wellness events, and initiatives under the J.O.E.Y. Program and Student Career umbrella.</li><li><strong>Community Oversight.</strong> Manage student organizations operating under the Global Community framework to foster an inclusive and supportive campus environment.</li><li><strong>Needs Research &amp; Collaboration.</strong> Conduct campus-wide research to identify student support needs and collaborate directly with university departments to execute targeted solutions.</li></ul></div>
-  </div></div></div>
-</li>
-<li class="commit" data-reveal>
-  <button class="commit__head" type="button" aria-expanded="false">
-    <span class="commit__hash">9f554a7</span><span class="commit__logo">MSC</span>
-    <span><span class="commit__title">Event Team Member</span><span class="commit__tag">Seasonal</span><span class="commit__org">Myanmar Student Community (MSC) · James Cook University (Singapore)</span></span>
-    <span class="commit__date">May 2026 — Sep 2026</span><span class="commit__chev" aria-hidden="true">+</span>
-  </button>
-  <div class="commit__body"><div><div class="commit__inner">
-    <div class="meta">Singapore · On-site<br>May 2026 — Sep 2026</div>
-    <div><p>Co-organized campus events, cultural exchanges, student welcome initiatives, and outdoor bonding excursions.</p><ul><li><strong>Cross-Cultural Collaboration.</strong> Co-organized joint community events, including a collaborative cultural exchange with the Vietnamese Student Community to foster inclusivity and diversity across campus.</li><li><strong>Event Planning.</strong> Spearheaded the end-to-end planning and scheduling of flagship campus initiatives, including the official Student Welcome Party and Club Showcase Day.</li><li><strong>Community Engagement.</strong> Led community bonding excursions, including outdoor hiking trips, driving student engagement and team building within the student body.</li><li><strong>Operational Execution.</strong> Coordinated venue setups, vendor interactions, schedule management, and real-time logistics to ensure high participant satisfaction across all flagship events.</li></ul></div>
-  </div></div></div>
-</li>
-<li class="commit" data-reveal>
-  <button class="commit__head" type="button" aria-expanded="false">
-    <span class="commit__hash">9f7078e</span><span class="commit__logo">GATE</span>
-    <span><span class="commit__title">ICT Systems Administrator &amp; Technical Representative</span><span class="commit__tag">Freelance · Remote</span><span class="commit__org">Grand Association of Technology and Education (GATE)</span></span>
-    <span class="commit__date">Aug 2024 — Current</span><span class="commit__chev" aria-hidden="true">+</span>
-  </button>
-  <div class="commit__body"><div><div class="commit__inner">
-    <div class="meta">Remote<br>Aug 2024 — Current</div>
-    <div><p>Delivering technical support, ICT instruction, institutional representation, and public relations for GATE.</p><ul><li><strong>Technical Support &amp; IT Assistance.</strong> Hands-on support for students, teachers, and staff — troubleshooting hardware and software, managing user accounts, and resolving network connectivity problems.</li><li><strong>Teaching &amp; Academic Support.</strong> Delivered ICT and Computer Studies instruction, supported curriculum delivery, and assisted students with technical and academic inquiries.</li><li><strong>Institutional Representation.</strong> Acted as an official representative of the institution, communicating on behalf of GATE with students, parents, partners, and external stakeholders.</li><li><strong>Internal Communication.</strong> Ensured clear and timely communication of institutional updates, policies, and announcements to students, parents, and staff.</li><li><strong>Public Relations &amp; Brand Promotion.</strong> Planned and executed initiatives to strengthen the institution’s public image through social media, newsletters, and community engagement.</li><li><strong>Student &amp; Staff Advocacy.</strong> Served as a liaison between students, faculty, and administration so concerns, feedback, and operational needs were addressed effectively.</li><li><strong>Event Coordination Support.</strong> Supported the planning, promotion, and execution of academic events, workshops, and seminars.</li></ul></div>
-  </div></div></div>
-</li>
-<li class="commit" data-reveal>
-  <button class="commit__head" type="button" aria-expanded="false">
-    <span class="commit__hash">9f8ba75</span><span class="commit__logo">ONYX</span>
-    <span><span class="commit__title">IT Network Analyst</span><span class="commit__tag">Full-time</span><span class="commit__org">Tribe513 | The Onyx Group</span></span>
-    <span class="commit__date">Sep 2023 — Nov 2025</span><span class="commit__chev" aria-hidden="true">+</span>
-  </button>
-  <div class="commit__body"><div><div class="commit__inner">
-    <div class="meta">United States · On-site<br>Sep 2023 — Nov 2025</div>
-    <div><p>Engineered, deployed, and maintained resilient network and server infrastructure across high-pressure corporate and healthcare environments. Recognized for a methodical, composed approach to high-stakes troubleshooting, system optimization, and zero-downtime crisis resolution.</p><ul><li><strong>Infrastructure &amp; Defense.</strong> Configured, hardened, and administered enterprise-grade network equipment — firewalls, switches, and access points — to secure high-value data assets.</li><li><strong>Regulatory &amp; Compliance.</strong> Spearheaded strict adherence to HIPAA compliance frameworks and corporate security policies, ensuring system integrity and data privacy.</li><li><strong>Architecture Deployment.</strong> Designed and implemented scalable solutions for complex network environments and server rooms, creating a blueprint for high-performance operations.</li><li><strong>Technical Governance.</strong> Authored IT systems documentation, standard operating procedures (SOPs), and network baselines to streamline future scale and collaboration.</li><li><strong>Cross-Functional Synergy.</strong> Collaborated with multidisciplinary teams to ensure optimal systems performance, rapid incident response, and technology alignment.</li></ul><div class="actions"><button class="btn btn--ghost btn--sm" type="button" data-modal-open="onyx-modal"><i class="ion-document-text"></i> Proof of employment</button></div></div>
-  </div></div></div>
-</li>
-<li class="commit" data-reveal>
-  <button class="commit__head" type="button" aria-expanded="false">
-    <span class="commit__hash">9fa6d5c</span><span class="commit__logo">WU</span>
-    <span><span class="commit__title">Student Building Manager &amp; Lifeguard</span><span class="commit__tag">Part-time</span><span class="commit__org">Webster University</span></span>
-    <span class="commit__date">Apr 2022 — May 2023</span><span class="commit__chev" aria-hidden="true">+</span>
-  </button>
-  <div class="commit__body"><div><div class="commit__inner">
-    <div class="meta">St. Louis, Missouri, US · On-site<br>Apr 2022 — May 2023</div>
-    <div><p>Managed administrative operations for the University Center and provided emergency safety oversight. Awarded Employee of the Semester (Fall 2022).</p><h5>Student Building Manager · Jan 2023 – May 2023</h5><p>Managed administrative operations at the University Center, including building maintenance, facility policies, and event management, using EMS 3.0, CARS, and Microsoft Teams.</p><h5>Lifeguard · Apr 2022 – May 2023</h5><p>Daily inspections to keep swimming areas and equipment safe. Administered First Aid and CPR. Recognized as Employee of the Semester in Fall 2022.</p></div>
-  </div></div></div>
-</li>
-<li class="commit" data-reveal>
-  <button class="commit__head" type="button" aria-expanded="false">
-    <span class="commit__hash">9fc2043</span><span class="commit__logo">AC</span>
-    <span><span class="commit__title">Customer Service Representative</span><span class="commit__tag">Part-time</span><span class="commit__org">American Center</span></span>
-    <span class="commit__date">May 2017</span><span class="commit__chev" aria-hidden="true">+</span>
-  </button>
-  <div class="commit__body"><div><div class="commit__inner">
-    <div class="meta">Yangon, Myanmar · On-site<br>May 2017</div>
-    <div><p>Input client information into spreadsheets and company databases to give leaders quick access to essential client data. Answered questions and addressed customers’ needs.</p></div>
-  </div></div></div>
-</li>
-<li class="commit" data-reveal>
-  <button class="commit__head" type="button" aria-expanded="false">
-    <span class="commit__hash">9fdd32a</span><span class="commit__logo">AC</span>
-    <span><span class="commit__title">Vice President — IT Club &amp; Public Speaking Club</span><span class="commit__tag">Part-time</span><span class="commit__org">American Center</span></span>
-    <span class="commit__date">Mar 2016 — Dec 2016</span><span class="commit__chev" aria-hidden="true">+</span>
-  </button>
-  <div class="commit__body"><div><div class="commit__inner">
-    <div class="meta">Yangon, Myanmar · On-site<br>Mar 2016 — Dec 2016</div>
-    <div><p>Managed social media strategy and public speaking workshops across student organizations.</p><h5>Vice President, IT Club · May 2016 – Dec 2016</h5><p>Daily social media management with creative content across LinkedIn, Twitter, Instagram, and Facebook. Trained, managed, and motivated members to develop professional skills.</p><h5>Vice President, Public Speaking Club · Mar 2016 – Aug 2016</h5><p>Used stories, humor, and inspirational messages to deliver engaging presentations and promote important messages to attendees.</p></div>
-  </div></div></div>
-</li>
-<li class="commit" data-reveal>
-  <button class="commit__head" type="button" aria-expanded="false">
-    <span class="commit__hash">9ff8611</span><span class="commit__logo">GATE</span>
-    <span><span class="commit__title">Computer Technician &amp; Computer Teacher</span><span class="commit__tag">Full-time</span><span class="commit__org">Grand Academy of Technology and Education</span></span>
-    <span class="commit__date">Jun 2015 — Dec 2022</span><span class="commit__chev" aria-hidden="true">+</span>
-  </button>
-  <div class="commit__body"><div><div class="commit__inner">
-    <div class="meta">Yangon, Myanmar · On-site / Remote<br>Jun 2015 — Dec 2022</div>
-    <div><p>Configured network drivers, repaired hardware, taught online security awareness, managed the Microsoft 365 Admin Center, and instructed ICT courses.</p><h5>Computer Technician · Jun 2015 – Dec 2022</h5><p>Configured computers with network drivers and printers, diagnosed hardware issues with approved tools, taught security awareness to teachers, and administered Microsoft 365 for student and teacher accounts.</p><h5>Computer Teacher · Aug 2015 – Jan 2016</h5><p>Created tests and assignments to assess high-school students and instructed hardware and software courses using real-world case studies.</p></div>
-  </div></div></div>
-</li>
-    </ol>
-  </div>
-</section>
-
-<section class="section" id="education">
-  <div class="wrap">
-    <div class="section-head" data-reveal><p class="eyebrow">03 — Education</p><h2 class="h-display">Always<br>learning</h2></div>
-    <div class="edu-grid">
-<article class="edu" data-reveal><div class="edu__date">Jan 2025 — Present <span class="now">In progress</span></div><div class="edu__lvl">Ph.D. Information Technology</div><div class="edu__school">University of the Cumberlands</div><p>Doctor of Philosophy in IT · Emphasis: Digital Forensics · Online</p><div class="grow"></div><div class="about-cta"></div></article>
-<article class="edu" data-reveal><div class="edu__date">May 2026 — Present <span class="now">In progress</span></div><div class="edu__lvl">Master of IT (AI)</div><div class="edu__school">James Cook University, Singapore</div><p>Master of Information Technology · Emphasis: Artificial Intelligence · JCU Merit Scholarship</p><div class="grow"></div><div class="about-cta"></div></article>
-<article class="edu" data-reveal><div class="edu__date">Dec 2025 — Apr 2026 </div><div class="edu__lvl">MIT Professional Certificate</div><div class="edu__school">MIT IDSS</div><p>Data Science and Machine Learning: Making Data-Driven Decisions</p><div class="grow"></div><div class="about-cta"><button class="btn btn--ghost btn--sm" type="button" data-modal-open="mit-modal">View credentials</button><a class="link-arrow" href="https://www.mygreatlearning.com/eportfolio/shah-htet-naing" target="_blank" rel="noopener">ePortfolio</a></div></article>
-<article class="edu" data-reveal><div class="edu__date">Jan 2022 — May 2023 </div><div class="edu__lvl">M.S. Cybersecurity</div><div class="edu__school">Webster University · St. Louis, MO</div><p>GPA 3.89 · Capstone: The effect of the IT sector on businesses. Coursework: Cyber Law &amp; Policy, Encryption, Strategic Ops, Threat Detection, Intelligence/Counter-Intelligence.</p><div class="grow"></div><div class="about-cta"><a class="link-arrow" href="https://drive.google.com/file/d/1txguBE1eNo3sYAQkVkyzxqBjR6A5J1pr/view" target="_blank" rel="noopener">Diploma</a></div></article>
-<article class="edu" data-reveal><div class="edu__date">Apr 2022 — May 2023 </div><div class="edu__lvl">Graduate Certificate</div><div class="edu__school">Webster University · St. Louis, MO</div><p>Graduate Certificate of Cybersecurity — Threat Detection</p><div class="grow"></div><div class="about-cta"><a class="link-arrow" href="https://drive.google.com/file/d/1PUUXvtlK58jusuMS-slAlVA8ief1Odkg/view" target="_blank" rel="noopener">Certificate</a></div></article>
-<article class="edu" data-reveal><div class="edu__date">Sep 2018 — Sep 2020 </div><div class="edu__lvl">B.Sc. Information Technology</div><div class="edu__school">Teesside University · Middlesbrough, UK</div><p>Second Class Honours, Division One (2:1)</p><div class="grow"></div><div class="about-cta"><a class="link-arrow" href="https://drive.google.com/file/d/1h9Ty3MPAz2SjAmVTA5y7XhXhPb0PfoLM/view" target="_blank" rel="noopener">Degree</a></div></article>
-<article class="edu" data-reveal><div class="edu__date">Oct 2017 — May 2018 </div><div class="edu__lvl">Foundation Diploma</div><div class="edu__school">Management Development Institute of Singapore</div><p>International Foundation Diploma in Information Technology</p><div class="grow"></div><div class="about-cta"><a class="link-arrow" href="https://drive.google.com/file/d/1LJMaNj34535474TSZpJYn8J-a73-OYpw/view" target="_blank" rel="noopener">Diploma</a></div></article>
-    </div>
-    <div class="sub-head" data-reveal><p class="eyebrow">Skills matrix</p></div>
-    <div class="skills-grid">
-<div class="window" data-reveal><div class="window__bar"><span class="window__dots"><i></i><i></i><i></i></span><span class="window__title">skills/01</span></div><div class="window__body"><h4 class="skill-head"><i class="ion-network"></i> Networking &amp; Security Tools</h4><div class="chips"><span class="chip">OSI Model</span><span class="chip">TCP/IP</span><span class="chip">Firewalls</span><span class="chip">IPS / IDS</span><span class="chip">ICS</span><span class="chip">Networking Protocols</span><span class="chip">Wireshark</span><span class="chip">Metasploit</span><span class="chip">VMware</span><span class="chip">Nessus</span><span class="chip">Splunk</span><span class="chip">Burp Suite</span><span class="chip">Nmap</span><span class="chip">Cryptography (OpenSSL)</span><span class="chip">Brute Force</span><span class="chip">Kali Linux</span><span class="chip">CAINE</span><span class="chip">Cisco Packet Tracer</span><span class="chip">Autopsy</span></div></div></div>
-<div class="window" data-reveal><div class="window__bar"><span class="window__dots"><i></i><i></i><i></i></span><span class="window__title">skills/02</span></div><div class="window__body"><h4 class="skill-head"><i class="ion-monitor"></i> Endpoint &amp; Infrastructure</h4><div class="chips"><span class="chip">SSL</span><span class="chip">SSH</span><span class="chip">DHCP</span><span class="chip">UDP</span><span class="chip">DNS</span><span class="chip">Microsoft Entra</span><span class="chip">Fortinet</span><span class="chip">Active Directory</span><span class="chip">Server Room Networking</span><span class="chip">Cloud Computing</span><span class="chip">SQL</span><span class="chip">Hardware Repair</span><span class="chip">Windows Troubleshooting</span><span class="chip">Technical Support</span><span class="chip">Web Design (HTML, CSS, JS)</span></div></div></div>
-<div class="window" data-reveal><div class="window__bar"><span class="window__dots"><i></i><i></i><i></i></span><span class="window__title">skills/03</span></div><div class="window__body"><h4 class="skill-head"><i class="ion-person-stalker"></i> Interpersonal &amp; Safety</h4><div class="chips"><span class="chip">Internet Research</span><span class="chip">Verbal &amp; Written Communication</span><span class="chip">Quantitative Skills</span><span class="chip">Time Management</span><span class="chip">Public Speaking</span><span class="chip">Prioritization</span><span class="chip">Presentation</span><span class="chip">Team Player</span><span class="chip">Leadership</span><span class="chip">Negotiation</span><span class="chip">CPR</span><span class="chip">First-Aid</span></div></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="work">
-  <div class="wrap">
-    <div class="section-head" data-reveal><p class="eyebrow">04 — Selected work</p><h2 class="h-display">Things I’ve<br>built &amp; fixed</h2></div>
-    <article class="window feature" data-reveal>
-      <div class="window__bar"><span class="window__dots"><i></i><i></i><i></i></span><span class="window__title">shahhub.app</span><span class="window__meta">featured</span></div>
-      <div class="window__body">
-        <div>
-          <p class="eyebrow">Flagship platform</p>
-          <h3>SHAHHUB</h3>
-          <p class="feature__tagline serif">Practical AI, cybersecurity tools and study resources — in one place.</p>
-          <p>A privacy-first command center with zero telemetry, OAuth sign-in and row-level security. Built for students, analysts and anyone who wants useful tools without the tracking.</p>
-          <div class="about-cta"><a class="btn btn--accent" href="https://shahhubtools.base44.app/" target="_blank" rel="noopener">Launch SHAHHUB ↗</a><a class="btn btn--ghost" href="work4.html">Case study</a></div>
-        </div>
-        <a class="feature__art" href="https://shahhubtools.base44.app/" target="_blank" rel="noopener" aria-label="Open SHAHHUB"><img src="img/shahhub.png" alt="SHAHHUB platform preview" loading="lazy"></a>
-      </div>
-    </article>
-    <div class="filters" role="group" aria-label="Filter projects">
-      <button class="filter is-active" type="button" data-filter="all">All <sup>6</sup></button>
-      <button class="filter" type="button" data-filter="project">Projects</button>
-      <button class="filter" type="button" data-filter="automation">Automation</button>
-      <button class="filter" type="button" data-filter="solution">Solutions</button>
-      <button class="filter" type="button" data-filter="lab">Labs</button>
-    </div>
-    <div class="proj-grid" data-filter-target>
-<article class="proj" data-cat="solution" data-reveal>
-  <a class="proj__img" href="work.html" tabindex="-1" aria-hidden="true"><img src="img/error/autoupdate.webp" alt="" loading="lazy" style="object-fit:contain;background:#ffffff;padding:18px"><span class="proj__num">01</span></a>
-  <div class="proj__body"><span class="proj__cat">Solution</span><h3 class="proj__title"><a href="work.html">M365 Auto Update Fix</a></h3><p class="proj__desc">Registry-level fix for the “Managed by Administrator” update block in Microsoft 365 Apps.</p></div>
-  <div class="proj__foot"><a class="link-arrow" href="work.html">Read case study →</a></div>
-</article>
-<article class="proj" data-cat="project automation" data-reveal>
-  <a class="proj__img" href="work4.html" tabindex="-1" aria-hidden="true"><img src="img/shahhub.png" alt="" loading="lazy" style="object-fit:contain;background:#0d0d10;padding:18px"><span class="proj__num">02</span></a>
-  <div class="proj__body"><span class="proj__cat">Project · Platform</span><h3 class="proj__title"><a href="work4.html">SHAHHUB Platform</a></h3><p class="proj__desc">Privacy-first cyber ops &amp; IT command center — zero telemetry, OAuth and row-level security.</p></div>
-  <div class="proj__foot"><a class="link-arrow" href="work4.html">Read case study →</a></div>
-</article>
-<article class="proj" data-cat="project automation" data-reveal>
-  <a class="proj__img" href="work3.html" tabindex="-1" aria-hidden="true"><img src="img/error/nhm.webp" alt="" loading="lazy"><span class="proj__num">03</span></a>
-  <div class="proj__body"><span class="proj__cat">Project · Automation</span><h3 class="proj__title"><a href="work3.html">Network Health Monitor</a></h3><p class="proj__desc">PowerShell + Power Automate monitor that alerts Microsoft Teams only when a device goes down.</p></div>
-  <div class="proj__foot"><a class="link-arrow" href="work3.html">Read case study →</a></div>
-</article>
-<article class="proj" data-cat="project automation" data-reveal>
-  <a class="proj__img" href="work2.html" tabindex="-1" aria-hidden="true"><img src="img/error/fortigate.webp" alt="" loading="lazy"><span class="proj__num">04</span></a>
-  <div class="proj__body"><span class="proj__cat">Project · Automation</span><h3 class="proj__title"><a href="work2.html">FortiGate Baseline Gen</a></h3><p class="proj__desc">PowerShell generator for consistent FortiGate baseline configs from a site acronym and IP octets.</p></div>
-  <div class="proj__foot"><a class="link-arrow" href="work2.html">Read case study →</a></div>
-</article>
-<article class="proj" data-cat="project" data-reveal>
-  <a class="proj__img" href="work1.html" tabindex="-1" aria-hidden="true"><img src="img/portfolio/thisweb.webp" alt="" loading="lazy"><span class="proj__num">05</span></a>
-  <div class="proj__body"><span class="proj__cat">Project · Cloud</span><h3 class="proj__title"><a href="work1.html">Cloud Portfolio Website</a></h3><p class="proj__desc">This site — static hosting on AWS S3 with CloudFront CDN delivery.</p></div>
-  <div class="proj__foot"><a class="link-arrow" href="work1.html">Read case study →</a></div>
-</article>
-<article class="proj proj--soon" data-cat="lab" data-reveal>
-  <div class="proj__img" tabindex="-1" aria-hidden="true"><span class="proj__ph"><i class="ion-ios-people"></i><b>AD · GPO · LAB</b></span><span class="proj__num">06</span></div>
-  <div class="proj__body"><span class="proj__cat">Lab</span><h3 class="proj__title">Active Directory Lab</h3><p class="proj__desc">Home lab for Active Directory, Group Policy and identity hardening. Write-up coming soon.</p></div>
-  <div class="proj__foot"><span class="link-arrow">Coming soon</span></div>
-</article>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="certificates">
-  <div class="wrap">
-    <div class="section-head" data-reveal><p class="eyebrow">05 — Credentials</p><h2 class="h-display">29 certificates<br>&amp; counting</h2></div>
-    <div class="cert-tools">
-      <label class="search"><b>grep</b><input type="search" placeholder="Search certificates… (e.g. Microsoft)" aria-label="Search certificates" data-cert-search></label>
-      <div class="filters" role="group" aria-label="Filter certificates">
-        <button class="filter is-active" type="button" data-cert-filter="all">All <sup>29</sup></button>
-        <button class="filter" type="button" data-cert-filter="security">Security <sup>7</sup></button>
-        <button class="filter" type="button" data-cert-filter="tech">Tech <sup>9</sup></button>
-        <button class="filter" type="button" data-cert-filter="academic">Academic <sup>4</sup></button>
-        <button class="filter" type="button" data-cert-filter="teaching">Teaching <sup>5</sup></button>
-        <button class="filter" type="button" data-cert-filter="other">Other <sup>4</sup></button>
-      </div>
-    </div>
-    <div class="cert-grid">
-<button class="cert" type="button" data-cat="security" data-lightbox="certs" data-src="img/certi/comptiasec.webp" data-title="CompTIA Security+"><span class="cert__img"><img src="img/certi/comptiasec-thumb.webp" alt="CompTIA Security+ certificate" loading="lazy"></span><span class="cert__name">CompTIA Security+</span></button>
-<button class="cert" type="button" data-cat="academic" data-lightbox="certs" data-src="img/certi/msc.webp" data-title="M.S. Cybersecurity — Webster"><span class="cert__img"><img src="img/certi/msc-thumb.webp" alt="M.S. Cybersecurity — Webster certificate" loading="lazy"></span><span class="cert__name">M.S. Cybersecurity — Webster</span></button>
-<button class="cert" type="button" data-cat="academic" data-lightbox="certs" data-src="img/certi/gradcert.webp" data-title="Grad Cert: Threat Detection — Webster"><span class="cert__img"><img src="img/certi/gradcert-thumb.webp" alt="Grad Cert: Threat Detection — Webster certificate" loading="lazy"></span><span class="cert__name">Grad Cert: Threat Detection — Webster</span></button>
-<button class="cert" type="button" data-cat="academic" data-lightbox="certs" data-src="img/certi/bsit.webp" data-title="B.Sc. IT — Teesside University"><span class="cert__img"><img src="img/certi/bsit-thumb.webp" alt="B.Sc. IT — Teesside University certificate" loading="lazy"></span><span class="cert__name">B.Sc. IT — Teesside University</span></button>
-<button class="cert" type="button" data-cat="academic" data-lightbox="certs" data-src="img/certi/mdisfd.webp" data-title="Foundation Diploma IT — MDIS"><span class="cert__img"><img src="img/certi/mdisfd-thumb.webp" alt="Foundation Diploma IT — MDIS certificate" loading="lazy"></span><span class="cert__name">Foundation Diploma IT — MDIS</span></button>
-<button class="cert" type="button" data-cat="tech" data-lightbox="certs" data-src="img/certi/cs50.webp" data-title="Harvard CS50"><span class="cert__img"><img src="img/certi/cs50-thumb.webp" alt="Harvard CS50 certificate" loading="lazy"></span><span class="cert__name">Harvard CS50</span></button>
-<button class="cert" type="button" data-cat="security" data-lightbox="certs" data-src="img/certi/nde.webp" data-title="EC-Council Network Defense Essentials"><span class="cert__img"><img src="img/certi/nde-thumb.webp" alt="EC-Council Network Defense Essentials certificate" loading="lazy"></span><span class="cert__name">EC-Council Network Defense Essentials</span></button>
-<button class="cert" type="button" data-cat="security" data-lightbox="certs" data-src="img/certi/cism.webp" data-title="CISM: Incident Management — Cybrary"><span class="cert__img"><img src="img/certi/cism-thumb.webp" alt="CISM: Incident Management — Cybrary certificate" loading="lazy"></span><span class="cert__name">CISM: Incident Management — Cybrary</span></button>
-<button class="cert" type="button" data-cat="security" data-lightbox="certs" data-src="img/certi/thm.webp" data-title="TryHackMe — Advent of Cyber 2025"><span class="cert__img"><img src="img/certi/thm-thumb.webp" alt="TryHackMe — Advent of Cyber 2025 certificate" loading="lazy"></span><span class="cert__name">TryHackMe — Advent of Cyber 2025</span></button>
-<button class="cert" type="button" data-cat="security" data-lightbox="certs" data-src="img/certi/trycy.webp" data-title="TryHackMe — Intro to Cyber Security"><span class="cert__img"><img src="img/certi/trycy-thumb.webp" alt="TryHackMe — Intro to Cyber Security certificate" loading="lazy"></span><span class="cert__name">TryHackMe — Intro to Cyber Security</span></button>
-<button class="cert" type="button" data-cat="security" data-lightbox="certs" data-src="img/certi/sgsec.webp" data-title="Security+ SY0-701 Course — Udemy"><span class="cert__img"><img src="img/certi/sgsec-thumb.webp" alt="Security+ SY0-701 Course — Udemy certificate" loading="lazy"></span><span class="cert__name">Security+ SY0-701 Course — Udemy</span></button>
-<button class="cert" type="button" data-cat="security" data-lightbox="certs" data-src="img/certi/ciscocy.webp" data-title="Cisco — Introduction to Cybersecurity"><span class="cert__img"><img src="img/certi/ciscocy-thumb.webp" alt="Cisco — Introduction to Cybersecurity certificate" loading="lazy"></span><span class="cert__name">Cisco — Introduction to Cybersecurity</span></button>
-<button class="cert" type="button" data-cat="tech" data-lightbox="certs" data-src="img/certi/ciscohard.webp" data-title="Cisco — Computer Hardware Basics"><span class="cert__img"><img src="img/certi/ciscohard-thumb.webp" alt="Cisco — Computer Hardware Basics certificate" loading="lazy"></span><span class="cert__name">Cisco — Computer Hardware Basics</span></button>
-<button class="cert" type="button" data-cat="tech" data-lightbox="certs" data-src="img/certi/mcsa.webp" data-title="Microsoft MCSA — Windows Server 2012"><span class="cert__img"><img src="img/certi/mcsa-thumb.webp" alt="Microsoft MCSA — Windows Server 2012 certificate" loading="lazy"></span><span class="cert__name">Microsoft MCSA — Windows Server 2012</span></button>
-<button class="cert" type="button" data-cat="tech" data-lightbox="certs" data-src="img/certi/mcp.webp" data-title="Microsoft Certified Professional"><span class="cert__img"><img src="img/certi/mcp-thumb.webp" alt="Microsoft Certified Professional certificate" loading="lazy"></span><span class="cert__name">Microsoft Certified Professional</span></button>
-<button class="cert" type="button" data-cat="tech" data-lightbox="certs" data-src="img/certi/intune.webp" data-title="Microsoft — Introduction to Intune"><span class="cert__img"><img src="img/certi/intune-thumb.webp" alt="Microsoft — Introduction to Intune certificate" loading="lazy"></span><span class="cert__name">Microsoft — Introduction to Intune</span></button>
-<button class="cert" type="button" data-cat="tech" data-lightbox="certs" data-src="img/certi/zani.webp" data-title="Microsoft 365 Fundamentals — Z &amp; S"><span class="cert__img"><img src="img/certi/zani-thumb.webp" alt="Microsoft 365 Fundamentals — Z &amp; S certificate" loading="lazy"></span><span class="cert__name">Microsoft 365 Fundamentals — Z &amp; S</span></button>
-<button class="cert" type="button" data-cat="tech" data-lightbox="certs" data-src="img/certi/aws.webp" data-title="AWS Builders Online Series"><span class="cert__img"><img src="img/certi/aws-thumb.webp" alt="AWS Builders Online Series certificate" loading="lazy"></span><span class="cert__name">AWS Builders Online Series</span></button>
-<button class="cert" type="button" data-cat="tech" data-lightbox="certs" data-src="img/certi/ai.webp" data-title="Google Cloud — Intro to Generative AI"><span class="cert__img"><img src="img/certi/ai-thumb.webp" alt="Google Cloud — Intro to Generative AI certificate" loading="lazy"></span><span class="cert__name">Google Cloud — Intro to Generative AI</span></button>
-<button class="cert" type="button" data-cat="tech" data-lightbox="certs" data-src="img/certi/cli.webp" data-title="LinkedIn — Linux Command Line"><span class="cert__img"><img src="img/certi/cli-thumb.webp" alt="LinkedIn — Linux Command Line certificate" loading="lazy"></span><span class="cert__name">LinkedIn — Linux Command Line</span></button>
-<button class="cert" type="button" data-cat="other" data-lightbox="certs" data-src="img/certi/dm.webp" data-title="Google — Digital Marketing"><span class="cert__img"><img src="img/certi/dm-thumb.webp" alt="Google — Digital Marketing certificate" loading="lazy"></span><span class="cert__name">Google — Digital Marketing</span></button>
-<button class="cert" type="button" data-cat="other" data-lightbox="certs" data-src="img/certi/meta.webp" data-title="Reuters × Meta — Digital Journalism"><span class="cert__img"><img src="img/certi/meta-thumb.webp" alt="Reuters × Meta — Digital Journalism certificate" loading="lazy"></span><span class="cert__name">Reuters × Meta — Digital Journalism</span></button>
-<button class="cert" type="button" data-cat="other" data-lightbox="certs" data-src="img/certi/glasglow.webp" data-title="City of Glasgow College — Digital Culture"><span class="cert__img"><img src="img/certi/glasglow-thumb.webp" alt="City of Glasgow College — Digital Culture certificate" loading="lazy"></span><span class="cert__name">City of Glasgow College — Digital Culture</span></button>
-<button class="cert" type="button" data-cat="teaching" data-lightbox="certs" data-src="img/certi/tkt1.webp" data-title="Cambridge TKT — Module 1"><span class="cert__img"><img src="img/certi/tkt1-thumb.webp" alt="Cambridge TKT — Module 1 certificate" loading="lazy"></span><span class="cert__name">Cambridge TKT — Module 1</span></button>
-<button class="cert" type="button" data-cat="teaching" data-lightbox="certs" data-src="img/certi/tkt2.webp" data-title="Cambridge TKT — Module 2"><span class="cert__img"><img src="img/certi/tkt2-thumb.webp" alt="Cambridge TKT — Module 2 certificate" loading="lazy"></span><span class="cert__name">Cambridge TKT — Module 2</span></button>
-<button class="cert" type="button" data-cat="teaching" data-lightbox="certs" data-src="img/certi/tkt3.webp" data-title="Cambridge TKT — Module 3"><span class="cert__img"><img src="img/certi/tkt3-thumb.webp" alt="Cambridge TKT — Module 3 certificate" loading="lazy"></span><span class="cert__name">Cambridge TKT — Module 3</span></button>
-<button class="cert" type="button" data-cat="teaching" data-lightbox="certs" data-src="img/certi/engacd.webp" data-title="English for Academic Purposes — American Center"><span class="cert__img"><img src="img/certi/engacd-thumb.webp" alt="English for Academic Purposes — American Center certificate" loading="lazy"></span><span class="cert__name">English for Academic Purposes — American Center</span></button>
-<button class="cert" type="button" data-cat="teaching" data-lightbox="certs" data-src="img/certi/cttr.webp" data-title="Critical Thinking through Reading — American Center"><span class="cert__img"><img src="img/certi/cttr-thumb.webp" alt="Critical Thinking through Reading — American Center certificate" loading="lazy"></span><span class="cert__name">Critical Thinking through Reading — American Center</span></button>
-<button class="cert" type="button" data-cat="other" data-lightbox="certs" data-src="img/certi/connect.webp" data-title="Connect — Summer Leadership Program 2017"><span class="cert__img"><img src="img/certi/connect-thumb.webp" alt="Connect — Summer Leadership Program 2017 certificate" loading="lazy"></span><span class="cert__name">Connect — Summer Leadership Program 2017</span></button>
-    </div>
-    <p class="section-note muted" data-cert-empty hidden>No certificates match that search.</p>
-
-    <div class="sub-head" data-reveal><p class="eyebrow">Honours &amp; awards</p></div>
-    <div class="awards">
-      <article class="award" data-reveal><span class="award__icon"><i class="ion-trophy"></i></span><h4>Employee of the Semester</h4><span class="org">Webster University · Fall 2022</span><p>Recognized for reliability and service as a lifeguard and student building manager.</p><div class="grow"></div><div class="actions"><button class="btn btn--ghost btn--sm" type="button" data-lightbox="awards" data-src="img/webrecomm.webp" data-title="Webster University — Employee of the Semester">View letter</button></div></article>
-      <article class="award" data-reveal><span class="award__icon"><i class="ion-ribbon-b"></i></span><h4>JCU Merit Scholarship</h4><span class="org">James Cook University Singapore · 2026</span><p>Awarded for academic merit for the Master of Information Technology (Artificial Intelligence).</p></article>
-      <article class="award" data-reveal><span class="award__icon"><i class="ion-university"></i></span><h4>MIT IDSS Certificate</h4><span class="org">MIT Institute for Data, Systems &amp; Society</span><p>Data Science and Machine Learning: Making Data-Driven Decisions.</p><div class="grow"></div><div class="actions"><button class="btn btn--ghost btn--sm" type="button" data-modal-open="mit-modal">View credentials</button></div></article>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="leadership">
-  <div class="wrap">
-    <div class="section-head" data-reveal><p class="eyebrow">06 — Leadership &amp; volunteering</p><h2 class="h-display">Giving<br>back</h2></div>
-    <div class="window lead-log" data-reveal>
-      <div class="window__bar"><span class="window__dots"><i></i><i></i><i></i></span><span class="window__title">volunteer.log</span><span class="window__meta">6 entries</span></div>
-      <div class="window__body"><div class="nodes" role="group" aria-label="Volunteering timeline"><button class="node is-active" type="button" data-node="0" aria-pressed="true"><span class="node__dot"></span><span class="node__date">Aug 2026 — Sep 2026</span><span class="node__role">Orientation Leader</span><span class="node__org">TR3 Orientation Program · JCU Singapore</span></button><button class="node" type="button" data-node="1" aria-pressed="false"><span class="node__dot"></span><span class="node__date">Jul 2026</span><span class="node__role">Ceremony Volunteer</span><span class="node__org">Graduation Ceremony · JCU Singapore</span></button><button class="node" type="button" data-node="2" aria-pressed="false"><span class="node__dot"></span><span class="node__date">Mar 2017 — May 2017</span><span class="node__role">Summer School Teacher</span><span class="node__org">Grand Academy of Technology and Education</span></button><button class="node" type="button" data-node="3" aria-pressed="false"><span class="node__dot"></span><span class="node__date">Nov 2015 — May 2016</span><span class="node__role">General Secretary</span><span class="node__org">American IT Club</span></button><button class="node" type="button" data-node="4" aria-pressed="false"><span class="node__dot"></span><span class="node__date">Aug 2015 — Jan 2016</span><span class="node__role">Volunteer of Education</span><span class="node__org">American Center Volunteer Program</span></button><button class="node" type="button" data-node="5" aria-pressed="false"><span class="node__dot"></span><span class="node__date">Jul 2015 — Oct 2015</span><span class="node__role">Program Director</span><span class="node__org">American IT Club</span></button></div><div class="node-panel is-active" data-panel="0"><div class="node-detail"><h4>Orientation Leader</h4><div class="meta">TR3 Orientation Program · JCU Singapore · Aug 2026 — Sep 2026</div><p>Welcomed and guided incoming students through orientation, campus tours and onboarding activities, helping them settle into university life.</p></div></div><div class="node-panel" data-panel="1"><div class="node-detail"><h4>Ceremony Volunteer</h4><div class="meta">Graduation Ceremony · JCU Singapore · Jul 2026</div><p>Supported the organising committee on graduation day — guest coordination, usher duties and smooth on-stage logistics.</p></div></div><div class="node-panel" data-panel="2"><div class="node-detail"><h4>Summer School Teacher</h4><div class="meta">Grand Academy of Technology and Education · Mar 2017 — May 2017</div><p>Taught summer school students in Mathematics, English and Computer Studies.</p></div></div><div class="node-panel" data-panel="3"><div class="node-detail"><h4>General Secretary</h4><div class="meta">American IT Club · Nov 2015 — May 2016</div><p>Recorded and managed meeting minutes, kept members informed, and assisted the president in preparing upcoming meetings and events.</p><button class="btn btn--ghost btn--sm" type="button" data-lightbox="vol" data-src="img/certi/gs.webp" data-title="General Secretary">View certificate</button></div></div><div class="node-panel" data-panel="4"><div class="node-detail"><h4>Volunteer of Education</h4><div class="meta">American Center Volunteer Program · Aug 2015 — Jan 2016</div><p>Taught the teaching process to potential teachers, prepared lesson plans and volunteered for community education outreach.</p><button class="btn btn--ghost btn--sm" type="button" data-lightbox="vol" data-src="img/certi/acvedu.webp" data-title="Volunteer of Education">View certificate</button></div></div><div class="node-panel" data-panel="5"><div class="node-detail"><h4>Program Director</h4><div class="meta">American IT Club · Jul 2015 — Oct 2015</div><p>Coordinated club programming and managed administrative duties for the American IT Club.</p></div></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="recommendations">
-  <div class="wrap">
-    <div class="section-head" data-reveal><p class="eyebrow">07 — Recommendations</p><h2 class="h-display">Kind words</h2></div>
-    <blockquote class="big-quote serif" data-reveal>“Methodical, composed under pressure, and genuinely invested in the people he supports.”<cite class="mono">— summarized from reference letters below</cite></blockquote>
-    <div class="endorse" data-reveal>
-      <ul class="endorse__list"><li><button class="endorse__item is-active" type="button" data-src="img/recommend-letter-1.webp" data-title="Onyx — Work Reference"><span class="n">01</span><span><strong>Onyx — Work Reference</strong><small>Manager</small></span><span class="arrow">→</span></button></li><li><button class="endorse__item" type="button" data-src="img/recommend-letter-2.webp" data-title="Onyx — Work Reference"><span class="n">02</span><span><strong>Onyx — Work Reference</strong><small>Coworker</small></span><span class="arrow">→</span></button></li><li><button class="endorse__item" type="button" data-src="img/recomm5.webp" data-title="Grand Association of Technology and Education"><span class="n">03</span><span><strong>Grand Association of Technology and Education</strong><small>GATE</small></span><span class="arrow">→</span></button></li><li><button class="endorse__item" type="button" data-src="img/webrecomm.webp" data-title="Webster University"><span class="n">04</span><span><strong>Webster University</strong><small>Employee of the Semester</small></span><span class="arrow">→</span></button></li><li><button class="endorse__item" type="button" data-src="img/recomm3.webp" data-title="Z &amp; S Education Services Co., Ltd"><span class="n">05</span><span><strong>Z &amp; S Education Services Co., Ltd</strong><small>Training partner</small></span><span class="arrow">→</span></button></li><li><button class="endorse__item" type="button" data-src="img/recomm4.webp" data-title="MDIS"><span class="n">06</span><span><strong>MDIS</strong><small>Bachelor programme</small></span><span class="arrow">→</span></button></li><li><button class="endorse__item" type="button" data-src="img/recomm1.webp" data-title="American Center"><span class="n">07</span><span><strong>American Center</strong><small>Yangon</small></span><span class="arrow">→</span></button></li></ul>
-      <button class="endorse__preview" type="button" data-lightbox-current aria-label="Open letter in viewer"><img src="img/recommend-letter-1.webp" alt="Recommendation letter preview" loading="lazy"><span class="zoom-hint mono">click to zoom ⤢</span></button>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="life">
-  <div class="wrap">
-    <div class="section-head" data-reveal><p class="eyebrow">08 — Beyond the screen</p><h2 class="h-display">Life &amp;<br>travel</h2></div>
-    <div class="life">
-      <div class="life-card" data-reveal>
-        <div>
-          <h3>Off the clock</h3>
-          <dl><dt>Creating</dt><dd>YouTube tutorials on <a href="https://www.youtube.com/@ShahsHaven" target="_blank" rel="noopener">Shah’s Haven</a></dd><dt>Writing</dt><dd><a href="https://www.amazon.com/stores/author/B0F3LTVTRP" target="_blank" rel="noopener">Published author on Amazon</a></dd><dt>Research</dt><dd><a href="https://orcid.org/0009-0009-0876-7269" target="_blank" rel="noopener">ORCID</a> · <a href="https://www.researchgate.net/profile/Shah-Htet-Naing" target="_blank" rel="noopener">ResearchGate</a> · <a href="https://www.authorea.com/users/904698-shah-htet-naing" target="_blank" rel="noopener">Authorea</a></dd><dt>Playing</dt><dd>Pool, hiking and long walks in new cities</dd></dl>
-        </div>
-      </div>
-      <button class="travel" type="button" data-modal-open="travel-modal" data-reveal>
-        <img src="img/paris-bg.webp" alt="" loading="lazy">
-        <span class="travel__body"><span class="eyebrow">Passport stamps</span><span class="travel__count">23</span><p>countries explored — and counting.</p><span class="pill mono">Open travel log →</span></span>
-      </button>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="blog">
-  <div class="wrap">
-    <div class="section-head" data-reveal><p class="eyebrow">09 — Writing</p><h2 class="h-display">From the<br>blog</h2></div>
-    <div class="posts">
-<a class="post" href="post.html" data-reveal><span class="post__img"><img src="img/bg1.webp" alt="" loading="lazy"></span><span class="post__body"><span class="post__cat">Cyber Security</span><h4>Social Engineering</h4><p>Manipulating people into performing actions or divulging sensitive information.</p><span class="post__meta">12 May 2023 · 2 min read</span></span></a>
-<a class="post" href="post1.html" data-reveal><span class="post__img"><img src="img/bg2.webp" alt="" loading="lazy"></span><span class="post__body"><span class="post__cat">Threat Intelligence</span><h4>Types of Attacks</h4><p>Common methods cybercriminals use to trick people and harm privacy.</p><span class="post__meta">14 Dec 2023 · 3 min read</span></span></a>
-<a class="post" href="post2.html" data-reveal><span class="post__img"><img src="img/bg3.webp" alt="" loading="lazy"></span><span class="post__body"><span class="post__cat">Strategy</span><h4>Attack Pathways</h4><p>The common steps involved in a typical social engineering attack.</p><span class="post__meta">13 Dec 2023 · 3 min read</span></span></a>
-<a class="post" href="post3.html" data-reveal><span class="post__img"><img src="img/bg4.webp" alt="" loading="lazy"></span><span class="post__body"><span class="post__cat">Policy &amp; GRC</span><h4>Disaster Recovery Policy</h4><p>How organizations restore critical functions and data after a disaster.</p><span class="post__meta">31 Oct 2024 · 5 min read</span></span></a>
-    </div>
-    <div class="blog-cta" data-reveal><a class="btn btn--ghost" href="https://shahknowledge99.blogspot.com/" target="_blank" rel="noopener">More on Shah’s Knowledge blog ↗</a></div>
-  </div>
-</section>
-
-<section class="section" id="contact">
-  <div class="wrap">
-    <div class="section-head" data-reveal><p class="eyebrow">10 — Contact</p><h2 class="h-display">Let’s build<br>something secure</h2></div>
-    <div class="contact-grid">
-      <div data-reveal>
-        <p class="contact-big"><a href="mailto:shahhtetnaing@gmail.com">Say hello →</a></p>
-        <div class="email-row"><code>shahhtetnaing@gmail.com</code><button class="btn btn--ghost btn--sm" type="button" data-copy="shahhtetnaing@gmail.com"><i class="ion-ios-copy-outline"></i> Copy</button></div>
-        <ul class="links-list">
-          <li><a href="https://www.linkedin.com/in/shah-htet-naing" target="_blank" rel="noopener"><i class="ion-social-linkedin"></i> LinkedIn ↗</a></li>
-          <li><a href="https://www.youtube.com/@ShahsHaven" target="_blank" rel="noopener"><i class="ion-social-youtube"></i> YouTube ↗</a></li>
-          <li><a href="https://www.facebook.com/mumdhu.kolaynaing/" target="_blank" rel="noopener"><i class="ion-social-facebook"></i> Facebook ↗</a></li>
-          <li><a href="https://shahhubtools.base44.app/" target="_blank" rel="noopener"><i class="ion-cube"></i> SHAHHUB ↗</a></li>
-        </ul>
-      </div>
-      <div class="window" data-reveal>
-        <div class="window__bar"><span class="window__dots"><i></i><i></i><i></i></span><span class="window__title">message.form</span><span class="window__meta">secure · google forms</span></div>
-        <div class="form-frame" data-src="https://docs.google.com/forms/d/e/1FAIpQLSeawteSpg6QJssm6EYR1bbz8mTyP7iPBuVs9Cy6roDQigWXXg/viewform?embedded=true"><a class="btn btn--accent" href="https://docs.google.com/forms/d/e/1FAIpQLSeawteSpg6QJssm6EYR1bbz8mTyP7iPBuVs9Cy6roDQigWXXg/viewform" target="_blank" rel="noopener">Open contact form ↗</a></div>
-      </div>
-    </div>
-  </div>
-</section>
 </main>
-
 <footer class="site-footer">
   <div class="wrap">
     <div class="rule-double"></div>
@@ -445,7 +107,7 @@
     <div class="footer-bottom mono">
       <span>© <span data-year>2026</span> Shah Htet Naing · Crafted with care in Singapore</span>
       <span class="swatches" role="group" aria-label="Accent colour">Accent&nbsp;<button class="swatch" type="button" data-accent-set="orange" style="--sw:#e07b2e" aria-label="Orange"></button><button class="swatch" type="button" data-accent-set="violet" style="--sw:#6c63ff" aria-label="Violet"></button><button class="swatch" type="button" data-accent-set="teal" style="--sw:#12a593" aria-label="Teal"></button><button class="swatch" type="button" data-accent-set="pink" style="--sw:#e84393" aria-label="Pink"></button><button class="swatch" type="button" data-accent-set="blue" style="--sw:#2b72f0" aria-label="Blue"></button></span>
-      <span>Press <kbd>/</kbd> for terminal · <a href="#top">Back to top ↑</a></span>
+      <span>Press <kbd>/</kbd> for terminal · <a href="index.html#top">Back to top ↑</a></span>
     </div>
   </div>
 </footer>
@@ -471,7 +133,6 @@
     <div class="window__foot"><span data-lb-count></span><span>← → to navigate</span></div>
   </div>
 </div>
-
 <div class="modal" id="onyx-modal" role="dialog" aria-modal="true" aria-label="Proof of employment" hidden>
   <div class="window"><div class="window__bar"><span class="window__dots"><i></i><i></i><i></i></span><span class="window__title">onyx/proof-of-employment</span><button class="modal-close" type="button" data-close aria-label="Close">esc</button></div>
   <div class="window__body"><div class="stack-imgs"><h4>Proof of employment</h4><img src="img/proofonyemp.webp" alt="Proof of employment — The Onyx Group" loading="lazy"><h4>Reference — Manager</h4><img src="img/recommend-letter-1.webp" alt="Recommendation letter from manager" loading="lazy"><h4>Reference — Coworker</h4><img src="img/recommend-letter-2.webp" alt="Recommendation letter from coworker" loading="lazy"></div></div></div>

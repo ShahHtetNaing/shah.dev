@@ -253,14 +253,14 @@
   if (term) {
     const out = $('.term-out', term), input = $('input', term);
     const print = (html, cls = '') => { const p = d.createElement('div'); if (cls) p.className = cls; p.innerHTML = html; out.appendChild(p); out.scrollTop = out.scrollHeight; };
-    const home = location.pathname.match(/(work|post)\d*\.html$/) ? 'index.html' : '';
-    const go = (hash) => { closeModal(term); setTimeout(() => { if (home) location.href = home + hash; else { const t = d.querySelector(hash); t && t.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' }); } }, 260); };
+    const go = url => { closeModal(term); setTimeout(() => { location.href = url; }, 220); };
     const cmds = {
-      help: () => print('<span class="m">commands:</span> whoami · about · experience · projects · certs · blog · contact · resume · theme [light|dark] · accent [orange|violet|teal|pink|blue] · socials · shahhub · clear · exit'),
+      help: () => print('<span class="m">commands:</span> whoami · home · about · resume · portfolio · projects · blog · contact · pdf · theme [light|dark] · accent [orange|violet|teal|pink|blue] · socials · shahhub · clear · exit'),
       whoami: () => print('Shah Htet Naing — IT Network Analyst · Cybersecurity · Ph.D. researcher (Digital Forensics) · Singapore'),
-      about: () => go('#about'), experience: () => go('#experience'), projects: () => go('#work'), work: () => go('#work'),
-      certs: () => go('#certificates'), blog: () => go('#blog'), contact: () => go('#contact'),
-      resume: () => { open($('.header-actions .btn')?.href, '_blank', 'noopener'); print('<span class="ok">✔</span> opening resume…'); },
+      home: () => go('index.html'), about: () => go('about.html'), resume: () => go('resume.html'), experience: () => go('resume.html'),
+      portfolio: () => go('portfolio.html'), certs: () => go('portfolio.html'), projects: () => go('projects.html'), work: () => go('projects.html'),
+      blog: () => go('blog.html'), contact: () => go('contact.html'),
+      pdf: () => { open($('.header-actions .btn')?.href, '_blank', 'noopener'); print('<span class="ok">✔</span> opening resume PDF…'); },
       shahhub: () => { open('https://shahhubtools.base44.app/', '_blank', 'noopener'); print('<span class="ok">✔</span> launching SHAHHUB…'); },
       socials: () => print('<a href="https://www.linkedin.com/in/shah-htet-naing" target="_blank" rel="noopener">linkedin</a> · <a href="https://www.youtube.com/@ShahsHaven" target="_blank" rel="noopener">youtube</a> · <a href="mailto:shahhtetnaing@gmail.com">email</a>'),
       theme: a => { const t = a === 'light' || a === 'dark' ? a : (root.dataset.theme === 'dark' ? 'light' : 'dark'); setTheme(t); print(`<span class="ok">✔</span> theme → ${t}`); },
@@ -300,3 +300,36 @@
   });
 })();
 document.querySelectorAll('[data-share]').forEach(a => { a.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(location.href); });
+(() => {
+  const ly = document.querySelector('[data-lanyard]');
+  if (!ly) return;
+  const sw = ly.querySelector('.lanyard__swing'), card = ly.querySelector('.lanyard__card');
+  const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let a = still ? 0 : 0.42, v = 0, drag = false, last = performance.now(), tilt = 0, lastY = scrollY, visible = true;
+  const pivot = () => { const r = ly.getBoundingClientRect(); return { x: r.left + r.width / 2, y: r.top }; };
+  const frame = now => {
+    const dt = Math.min(0.032, (now - last) / 1000); last = now;
+    if (!drag) { v += (-26 * Math.sin(a) - 1.5 * v) * dt; a += v * dt; }
+    tilt += (Math.max(-18, Math.min(18, -v * 9)) - tilt) * 0.12;
+    sw.style.transform = `rotate(${a}rad)`;
+    card.style.transform = `rotateY(${tilt}deg)`;
+    if (visible) requestAnimationFrame(frame);
+  };
+  new IntersectionObserver(es => { const was = visible; visible = es[0].isIntersecting; if (visible && !was) { last = performance.now(); requestAnimationFrame(frame); } }).observe(ly);
+  requestAnimationFrame(frame);
+  let pt = 0;
+  card.addEventListener('pointerdown', e => { drag = true; ly.classList.add('is-drag'); card.setPointerCapture(e.pointerId); pt = performance.now(); e.preventDefault(); });
+  card.addEventListener('pointermove', e => {
+    if (!drag) return;
+    const p = pivot(), now = performance.now();
+    const na = Math.max(-1.25, Math.min(1.25, Math.atan2(-(e.clientX - p.x), Math.max(40, e.clientY - p.y))));
+    const dt = Math.max(0.008, (now - pt) / 1000); pt = now;
+    v = (na - a) / dt * 0.6; a = na;
+  });
+  const end = () => { if (!drag) return; drag = false; ly.classList.remove('is-drag'); v = Math.max(-9, Math.min(9, v)); };
+  card.addEventListener('pointerup', end); card.addEventListener('pointercancel', end);
+  ly.addEventListener('pointermove', e => { if (!drag && e.pointerType === 'mouse') v -= e.movementX * 0.0025; });
+  addEventListener('scroll', () => { if (!still) v += (scrollY - lastY) * 0.0009; lastY = scrollY; }, { passive: true });
+  card.addEventListener('keydown', e => { if (e.key === 'ArrowLeft') v += 2.5; if (e.key === 'ArrowRight') v -= 2.5; });
+  card.tabIndex = 0; card.setAttribute('aria-label', 'ID card — use arrow keys to swing');
+})();

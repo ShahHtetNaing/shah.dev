@@ -843,3 +843,8 @@ a.footer-sign:hover i { transform: translateX(18px) rotate(-45deg); }
 .node-detail ul { margin: 4px 0 14px; }
 .node-detail li { line-height: 1.6; }
 @media (max-width: 640px) { .lanyard { height: 790px; } .lanyard__strap { height: 110px; } }
+.prose a.btn { text-decoration: none; }
+.prose a.btn--accent { color: var(--accent-ink); }
+.prose a.btn--accent:hover { color: var(--accent-ink); }
+.prose a.btn--ghost { color: var(--ink); }
+.prose a.btn i { font-size: 16px; }

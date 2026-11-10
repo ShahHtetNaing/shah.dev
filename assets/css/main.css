@@ -419,7 +419,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 
 /* ---------- Leadership / volunteering log ---------- */
 .lead-log .window__body { padding: 26px 18px 10px; }
-.nodes { display: grid; grid-template-columns: repeat(6, 1fr); position: relative; }
+.nodes { display: grid; grid-template-columns: repeat(7, 1fr); position: relative; }
 .nodes::before { content: ""; position: absolute; top: 9px; left: 8%; right: 8%; border-top: 1.5px solid var(--line); }
 .node { position: relative; text-align: center; padding: 0 6px 14px; border-radius: 10px; transition: background .25s; }
 .node__dot { width: 18px; height: 18px; margin: 0 auto 12px; border-radius: 50%; border: 2px solid var(--line); background: var(--surface); position: relative; transition: all .25s; }
@@ -832,3 +832,14 @@ kbd { font-family: var(--f-mono); font-size: 11px; border: 1px solid var(--line-
 a.footer-sign { display: inline-block; transition: color .3s; }
 a.footer-sign i { display: inline-block; font-size: .42em; vertical-align: middle; color: var(--accent); transition: transform .45s var(--ease); }
 a.footer-sign:hover i { transform: translateX(18px) rotate(-45deg); }
+
+/* ---------- photo + volunteer refinements ---------- */
+.home__nav { border-top: 0; }
+.home__frame img { object-position: 50% 22%; }
+.lanyard { height: 830px; }
+.lanyard__strap { height: 150px; }
+.lanyard__card img { aspect-ratio: 3 / 5; object-position: 50% 0; background: #ece9e4; }
+.node-detail p { margin: 0 0 10px; }
+.node-detail ul { margin: 4px 0 14px; }
+.node-detail li { line-height: 1.6; }
+@media (max-width: 640px) { .lanyard { height: 790px; } .lanyard__strap { height: 110px; } }

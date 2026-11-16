@@ -13,7 +13,7 @@
 <script>(function(){var d=document.documentElement;d.classList.remove('no-js');try{var t=localStorage.getItem('shah-theme');if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';d.dataset.theme=t;var a=localStorage.getItem('shah-accent');if(a)d.dataset.accent=a;}catch(e){d.dataset.theme='light';}})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/vendor/ionicons/css/ionicons.min.css">
-<link rel="stylesheet" href="assets/css/main.css?v=20261115b">
+<link rel="stylesheet" href="assets/css/main.css?v=20261116">
 </head>
 <body id="top">
 <div class="grain" aria-hidden="true"></div>
@@ -34,12 +34,12 @@
 <main id="main" class="page">
 <section class="section" id="certificates">
   <div class="wrap">
-    <div class="section-head" data-reveal><p class="eyebrow">05 — Credentials</p><h2 class="h-display">29 certificates<br>&amp; counting</h2></div>
+    <div class="section-head" data-reveal><p class="eyebrow">05 — Credentials</p><h2 class="h-display">30 certificates<br>&amp; counting</h2></div>
     <div class="cert-tools">
       <label class="search"><b>grep</b><input type="search" placeholder="Search certificates… (e.g. Microsoft)" aria-label="Search certificates" data-cert-search></label>
       <div class="filters" role="group" aria-label="Filter certificates">
-        <button class="filter is-active" type="button" data-cert-filter="all">All <sup>29</sup></button>
-        <button class="filter" type="button" data-cert-filter="security">Security <sup>7</sup></button>
+        <button class="filter is-active" type="button" data-cert-filter="all">All <sup>30</sup></button>
+        <button class="filter" type="button" data-cert-filter="security">Security <sup>8</sup></button>
         <button class="filter" type="button" data-cert-filter="tech">Tech <sup>9</sup></button>
         <button class="filter" type="button" data-cert-filter="academic">Academic <sup>4</sup></button>
         <button class="filter" type="button" data-cert-filter="teaching">Teaching <sup>5</sup></button>
@@ -53,6 +53,7 @@
 <button class="cert" type="button" data-cat="academic" data-lightbox="certs" data-src="img/certi/bsit.webp" data-title="B.Sc. IT — Teesside University"><span class="cert__img"><img src="img/certi/bsit-thumb.webp" alt="B.Sc. IT — Teesside University certificate" loading="lazy"></span><span class="cert__name">B.Sc. IT — Teesside University</span></button>
 <button class="cert" type="button" data-cat="academic" data-lightbox="certs" data-src="img/certi/mdisfd.webp" data-title="Foundation Diploma IT — MDIS"><span class="cert__img"><img src="img/certi/mdisfd-thumb.webp" alt="Foundation Diploma IT — MDIS certificate" loading="lazy"></span><span class="cert__name">Foundation Diploma IT — MDIS</span></button>
 <button class="cert" type="button" data-cat="tech" data-lightbox="certs" data-src="img/certi/cs50.webp" data-title="Harvard CS50"><span class="cert__img"><img src="img/certi/cs50-thumb.webp" alt="Harvard CS50 certificate" loading="lazy"></span><span class="cert__name">Harvard CS50</span></button>
+<button class="cert cert--meta" type="button" data-cat="security" data-lightbox="certs" data-src="img/certi/deloitte.webp" data-title="Deloitte Australia — Cyber Job Simulation" data-issuer="Forage · Deloitte Australia" data-issued="Oct 2026" data-cred="6ae031732a45c6c236608347" data-desc="Over the period of October 2026, completed practical tasks in cyber security." data-url="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_6956e88839ff7eaad9441b43_1793092398736_completion_certificate.pdf"><span class="cert__img"><img src="img/certi/deloitte-thumb.webp" alt="Deloitte Australia — Cyber Job Simulation certificate" loading="lazy"></span><span class="cert__name">Deloitte Australia — Cyber Job Simulation</span><span class="cert__meta">Forage · Oct 2026</span></button>
 <button class="cert" type="button" data-cat="security" data-lightbox="certs" data-src="img/certi/nde.webp" data-title="EC-Council Network Defense Essentials"><span class="cert__img"><img src="img/certi/nde-thumb.webp" alt="EC-Council Network Defense Essentials certificate" loading="lazy"></span><span class="cert__name">EC-Council Network Defense Essentials</span></button>
 <button class="cert" type="button" data-cat="security" data-lightbox="certs" data-src="img/certi/cism.webp" data-title="CISM: Incident Management — Cybrary"><span class="cert__img"><img src="img/certi/cism-thumb.webp" alt="CISM: Incident Management — Cybrary certificate" loading="lazy"></span><span class="cert__name">CISM: Incident Management — Cybrary</span></button>
 <button class="cert" type="button" data-cat="security" data-lightbox="certs" data-src="img/certi/thm.webp" data-title="TryHackMe — Advent of Cyber 2025"><span class="cert__img"><img src="img/certi/thm-thumb.webp" alt="TryHackMe — Advent of Cyber 2025 certificate" loading="lazy"></span><span class="cert__name">TryHackMe — Advent of Cyber 2025</span></button>
@@ -126,6 +127,7 @@
   <div class="window">
     <div class="window__bar"><span class="window__dots"><i></i><i></i><i></i></span><span class="window__title" data-lb-title>preview</span><button class="modal-close" type="button" data-close aria-label="Close">esc</button></div>
     <div class="window__body"><button class="lb-nav lb-prev" type="button" aria-label="Previous">‹</button><img alt=""><button class="lb-nav lb-next" type="button" aria-label="Next">›</button></div>
+    <div class="lb-meta" hidden><p class="lb-meta__row"></p><ul class="lb-meta__desc"></ul><a class="btn btn--accent btn--sm lb-meta__link" target="_blank" rel="noopener" hidden>Verify credential <i class="ion-android-open"></i></a></div>
     <div class="window__foot"><span data-lb-count></span><span>← → to navigate</span></div>
   </div>
 </div>
@@ -142,6 +144,6 @@
   <div class="window__body"><h3 class="h-display" style="font-size:44px">Where I’ve been</h3><p class="muted">Highlighted: home, current base and favourite.</p><div class="countries"><span class="fav">Myanmar</span><span class="fav">Singapore</span><span>United States</span><span>United Kingdom</span><span>France</span><span>Saudi Arabia</span><span>Qatar</span><span>Thailand</span><span>Malaysia</span><span>Netherlands</span><span>Germany</span><span>China</span><span>Denmark</span><span>Indonesia</span><span>Greece</span><span>Lithuania</span><span>Luxembourg</span><span>Finland</span><span>Switzerland</span><span>Sweden</span><span class="fav">Iceland</span></div></div></div>
 </div>
 
-<script src="assets/js/main.js?v=20261115b" defer></script>
+<script src="assets/js/main.js?v=20261116" defer></script>
 </body>
 </html>

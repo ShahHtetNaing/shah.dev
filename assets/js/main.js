@@ -203,6 +203,17 @@
     $('[data-lb-title]', lb).textContent = it.dataset.title || 'preview';
     $('[data-lb-count]', lb).textContent = `${idx + 1} / ${group.length}`;
     $$('.lb-nav', lb).forEach(n => (n.hidden = group.length < 2));
+    const meta = $('.lb-meta', lb), d = it.dataset;
+    if (meta) {
+      const has = !!d.issuer; meta.hidden = !has; lb.classList.toggle('has-meta', has);
+      if (has) {
+        const row = $('.lb-meta__row', meta); row.textContent = '';
+        [['issuer', d.issuer], ['issued', d.issued], ['credential id', d.cred]].forEach(([k, v]) => { if (!v) return; const s = document.createElement('span'); const b = document.createElement('b'); b.textContent = k; s.append(b, ' ' + v); row.append(s); });
+        const ul = $('.lb-meta__desc', meta); ul.textContent = '';
+        (d.desc || '').split('\n').filter(Boolean).forEach(x => { const li = document.createElement('li'); li.textContent = x; ul.append(li); });
+        const a = $('.lb-meta__link', meta); a.hidden = !d.url; if (d.url) a.href = d.url;
+      }
+    }
   };
   const lbOpen = el => {
     const g = el.dataset.lightbox;

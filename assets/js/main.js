@@ -281,11 +281,11 @@
     const print = (html, cls = '') => { const p = d.createElement('div'); if (cls) p.className = cls; p.innerHTML = html; out.appendChild(p); out.scrollTop = out.scrollHeight; };
     const go = url => { closeModal(term); setTimeout(() => { location.href = url; }, 220); };
     const cmds = {
-      help: () => print('<span class="m">commands:</span> whoami · home · about · resume · portfolio · projects · blog · contact · personality · mbti · ocean · pdf · theme [light|dark] · accent [orange|violet|teal|pink|blue|red] · socials · shahhub · clear · exit'),
+      help: () => print('<span class="m">commands:</span> whoami · home · about · resume · portfolio · projects · blog · research · contact · personality · mbti · ocean · pdf · theme [light|dark] · accent [orange|violet|teal|pink|blue|red] · socials · shahhub · clear · exit'),
       whoami: () => print('Shah Htet Naing — IT Network Analyst · Cybersecurity · Ph.D. researcher (Information Security) · Singapore'),
       home: () => go('index.html'), about: () => go('about.html'), resume: () => go('resume.html'), experience: () => go('resume.html'),
       portfolio: () => go('portfolio.html'), certs: () => go('portfolio.html'), projects: () => go('projects.html'), work: () => go('projects.html'),
-      blog: () => go('blog.html'), contact: () => go('contact.html'),
+      blog: () => go('blog.html'), research: () => go('blog.html#research'), contact: () => go('contact.html'),
       pdf: () => { open($('.header-actions .btn')?.href, '_blank', 'noopener'); print('<span class="ok">✔</span> opening resume PDF…'); },
       shahhub: () => { open('https://shahhubtools.base44.app/', '_blank', 'noopener'); print('<span class="ok">✔</span> launching SHAHHUB…'); },
       socials: () => print('<a href="https://www.linkedin.com/in/shah-htet-naing" target="_blank" rel="noopener">linkedin</a> · <a href="https://www.youtube.com/@ShahsHaven" target="_blank" rel="noopener">youtube</a> · <a href="mailto:shahhtetnaing@gmail.com">email</a>'),
@@ -362,3 +362,8 @@ document.querySelectorAll('[data-share]').forEach(a => { a.href = 'https://www.l
   addEventListener('scroll', () => { if (!still) v += (scrollY - lastY) * 0.0009; lastY = scrollY; }, { passive: true });
   card.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target === card) { e.preventDefault(); flip(); } if (e.key === 'ArrowLeft') v += 2.5; if (e.key === 'ArrowRight') v -= 2.5; });
 })();
+
+document.querySelectorAll('.paper__more').forEach(b => b.addEventListener('click', () => {
+  const o = b.closest('.paper').classList.toggle('is-open');
+  b.setAttribute('aria-expanded', o); b.textContent = o ? 'Show less' : 'Read abstract';
+}));

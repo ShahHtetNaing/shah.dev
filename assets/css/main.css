@@ -411,7 +411,10 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .cert--meta .cert__name::before { content: "✓ "; }
 
 /* ---------- Awards ---------- */
-.awards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.awards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.award--feature { border-color: var(--accent); box-shadow: 5px 5px 0 var(--accent-soft); position: relative; }
+.award__tag { position: absolute; top: 18px; right: 18px; font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; padding: 4px 9px; border-radius: 999px; background: var(--accent); color: var(--accent-ink); }
+.award p strong { color: var(--ink); }
 .award { padding: 22px; border: 1.5px solid var(--line); border-radius: var(--radius); background: var(--surface); display: flex; flex-direction: column; gap: 8px; }
 .award__icon { width: 44px; height: 44px; display: grid; place-items: center; border: 1.5px solid var(--accent); color: var(--accent); transform: rotate(45deg); border-radius: 8px; margin: 6px 0 10px 6px; }
 .award__icon i { transform: rotate(-45deg); font-size: 20px; }
